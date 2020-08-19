@@ -1,6 +1,6 @@
 19.08.2020
 
-#Allgemeine Ziele 
+#Allgemeine Ziele
 
 Github Account wurde erstellt
 Git-Client wurde heruntergeladen und installiert.
