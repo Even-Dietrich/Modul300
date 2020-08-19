@@ -1,2 +1,6 @@
 # Modul300
-# I han jetzt au zugriff
+#
+# VM-Server:
+# Webserver mit einem CMS (Apache2, SQL, Wordpress)
+# Fileserver mit vor definierten Ordner
+# 
