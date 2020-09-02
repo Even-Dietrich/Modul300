@@ -29,6 +29,25 @@ Desweiteren habe ich Vagrant kennen gerlernt. Damit kann man Konfigurationsdatei
 
  
 <h2>Even:</h2>
+<p>Stand 19.08.2020<br>
+Heute hab ich gelernt wie man mit Github arbeitet, ein Repository erstellt und dieses dann mit der VM per SSH verbinden kann. Da ich die VM von der TBZ nutzte musste ich nicht installieren. 
+Github:
+ SSH Key erstellen: 
+ 
+
+Zu Github kamm nochVirtualBox und Vagrant.<br>
+VirtalBox ist ähnlich zu VMWare. Man nutzt es zum erstellen und verwalten von Virtuellen Maschinen<br>
+
+VirtalBox ist eine Plattform um VMs zu erstellen und verwalten, ähnlich zu VMWare.<br>
+
+Vagrant ist dazu da um einfach automatisch VM zu installieren. Da wir ich die VM nutze war schon alles installiert und ich musste mich nur noch in die Anleitung reinslesen. Per Bash Terminal können wir nun darauf zugreigen und damit arbeiten<br>
+
+
+Wichtige Befehle für Vagrant:<br>
+- vagrant init ubuntu/xenial64 (init erstellt ein leeres vagrantfile, in diesem Beispiel wird eines mit ubuntu erstellt )<br>
+- vagrant up (erzeugt und konfiguriert die VM anhand des vagrantfiles)<br>
+- vagrant ssh (verbindet per ssh mit VM)<br>
+- vagrant halt (beendet die VM)<br>
 
 <h2>Jason:</h2>
 
