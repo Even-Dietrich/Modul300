@@ -110,7 +110,7 @@ Wichtige Befehle für Vagrant:<br>
 - vagrant up (erzeugt und konfiguriert die VM anhand des vagrantfiles)<br>
 - vagrant ssh (verbindet per ssh mit VM)<br>
 - vagrant halt (beendet die VM)<br>
-
+<br>
 <p>Stand 02.09.2020<br>
 Ich habe heute den Kapitel 25 Sicherheit durchgearbeitet. Ich habe dabei vagrant näher kennengelernt und gelernt wie man mit einem Vagrantfile einen Server mit ReverseProxy<br>
 und Firewall einstellungen als VM erstellt. Ausserdem habe ich gelernt wie man ein vagrantfile richtig konfigueriert und damit eine VM erstellt.<br>
