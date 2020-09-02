@@ -1,40 +1,41 @@
 Vagrant.configure("2") do |config|
 
-	#Erster Server, Fileserver
-	config.vm.define "srv03-lx-fileserver" do |subconfig|
+	#Erster Server, fileserver
+	config.vm.define "srv03-lx-Fileserver" do |subconfig|
 		subconfig.vm.provider "virtualbox" do |vb|
 			vb.name = "srv03-lx-fileserver"
 			vb.memory = "1024"
 		end
 
 		subconfig.vm.box = "ubuntu/xenial64"
-		subconfig.vm.hostname = "srv01-lx-webserver"
+		subconfig.vm.hostname = "srv03-lx-fileserver"
 		subconfig.vm.network :private_network, ip: "10.0.0.12"
-
-		#Shell für den Webserver 
+		#Shell für den Fileserver 
 		subconfig.vm.provision "shell", inline: <<-SHELL
 
-			
-			#Samba installieren
+			#Diverse Services installieren
 			set -o xtrace
 			sudo apt-get update
-            		sudo apt-get -y install samba
-			#Samba konfigurieren 
-			#Samba Service neustarten
-			sudo service smbd restart
-			
-			
-			#Backup Dienst installieren
-			sudo apt-get update
-			sudo apt-get -y install rsync 
-		SHELL
-	end
+            sudo apt-get -y install samba
+            #Creat Folder
+            sudo mkdir /home/sambashare
+            #Share Konfiguration
+            sudo nano /etc/samba/smb.conf
 
-	#Zweiter Server, Backupserver
-	config.vm.define "srv04-lx-fileserver" do |subconfig|
+            sudo service smbd restart
+	#Firewallrule aktualisieren
+            sudo ufw allow samba
+		#Backup einrichten
+		sudo apt-get update
+		sudo apt-get -y install rsync 
+		
+            SHELL
+end
+   #Zweiter Server, Datenbankserver
+	config.vm.define "srv04_lx_fileserver" do |subconfig|
 		subconfig.vm.provider "virtualbox" do |vb|
-			vb.name = "srv04-lx-fileserver"
-			vb.memory = "1024"
+			vb.name = "srv04_lx_fileserver"
+			vb.memory = "512"
 		end
 
 		subconfig.vm.box = "ubuntu/xenial64"
@@ -43,23 +44,13 @@ Vagrant.configure("2") do |config|
 
 		#Shell srv04
 		subconfig.vm.provision "shell", inline: <<-SHELL
-			
+		
 
-		SHELL
-	end
 
-	config.vm.provision "shell", inline: <<-SHELL 
-	#Konfig für alle Virtuellen Maschienen
-
-	#Installation von Applikationen
-    set -o xtrace
-	sudo apt-get update
-	sudo apt-get upgrade
-	#sudo apt-get -y install apache2
 
 
 	#Alle Services neu starten
 	sudo systemctl restart apache2.service 
 
 	SHELL
-end
+end 
