@@ -1,52 +1,56 @@
 Vagrant.configure("2") do |config|
 
-	#Erster Server, fileserver
+	#Erster Server, Fileserver
+	#Grundkonfigurationen für die VM
 	config.vm.define "srv03-lx-Fileserver" do |subconfig|
 		subconfig.vm.provider "virtualbox" do |vb|
 			vb.name = "srv03-lx-fileserver"
 			vb.memory = "1024"
-		end
+	end
 
-		subconfig.vm.box = "ubuntu/trusty64"
-		subconfig.vm.hostname = "srv03-lx-fileserver"
-		subconfig.vm.network :private_network, ip: "10.0.0.12"
-		#Shell für den Fileserver 
-		subconfig.vm.provision "shell", inline: <<-SHELL
+	subconfig.vm.box = "ubuntu/trusty64"
+ 	subconfig.vm.hostname = "srv03-lx-fileserver"
+	subconfig.vm.network :private_network, ip: "10.0.0.12"
+	
+	#Shell für den Fileserver 
+	subconfig.vm.provision "shell", inline: <<-SHELL
 
-			#Diverse Services installieren
-			set -o xtrace
-			sudo apt-get update
-            sudo apt-get -y install samba-common samba 
-			sudo apt-get -y install tdb-tools 
-			#Service Konfigurieren
-			sudo su
-			sudo echo " server min protocol = SMB2_02 
-			server max protocol = SMB3" >> /etc/samba/smb.conf
-			sudo echo "guest ok = yes" >> /etc/samba/smb.conf
-			sudo echo "usershare allow guests = yes" >> /etc/samba/smb.conf
-			sudo echo "map to guest = bad user" >> /etc/samba/smb.conf
-			sudo echo "guest account = nobody" >> /etc/samba/smb.conf
-			sudo echo "writeable = yes" >> /etc/samba/smb.conf
-			sudo echo "comment= Samaba 
+	#Diverse Services installieren
+		set -o xtrace
+		sudo apt-get update
+            	sudo apt-get -y install samba-common samba 
+		sudo apt-get -y install tdb-tools 
+	#Service Konfigurieren SAMBA 
+		sudo su
+	#smb.conf anpassen 
+		sudo echo " server min protocol = SMB2_02 
+		server max protocol = SMB3" >> /etc/samba/smb.conf
+		sudo echo "guest ok = yes" >> /etc/samba/smb.conf
+		sudo echo "usershare allow guests = yes" >> /etc/samba/smb.conf
+		sudo echo "map to guest = bad user" >> /etc/samba/smb.conf
+		sudo echo "guest account = nobody" >> /etc/samba/smb.conf
+		sudo echo "writeable = yes" >> /etc/samba/smb.conf
+		sudo echo "comment= Samaba 
 				 path= /home/sambashare
 				read only = no 
 				browsable = yes" >> /etc/samba/smb.conf
-			   #Creat Folder
-				sudo mkdir /home/sambashare
-			sudo service smbd restart
+	#Share Folder erstellen 
+		sudo mkdir /home/sambashare
+	#Service Neustarten
+		sudo service smbd restart
 			
 			
-		#Firewallrule aktualisieren
-            sudo ufw allow samba
-		#Backup Installieren
+	#Firewallrule aktualisieren
+            	sudo ufw allow samba
+	#Backup Installieren
 		sudo apt-get update
 		sudo apt-get -y install rsync 
-		#Backup einrichten
+		#Backup einrichten Ziel zum Backup Server 
 		sudo rsync -a /home/sambashare /srv04_lx_fileserver
         SHELL
 		end
-		#Zweiter Server, Datenbankserver
-	config.vm.define "srv04_lx_fileserver" do |subconfig|
+	#Zweiter Server, Backupserver
+		config.vm.define "srv04_lx_fileserver" do |subconfig|
 		subconfig.vm.provider "virtualbox" do |vb|
 			vb.name = "srv04_lx_fileserver"
 			vb.memory = "512"
@@ -56,10 +60,10 @@ Vagrant.configure("2") do |config|
 		subconfig.vm.hostname = "srv04-lx-fileserver"
 		subconfig.vm.network :private_network, ip: "10.0.0.13"
 
-		#Shell srv04
+	#Shell srv04
 		subconfig.vm.provision "shell", inline: <<-SHELL
-		  #Creat Folder
-				sudo mkdir /home/backup
+	#Creat Folder for Backup from Fileserver
+		sudo mkdir /home/backup
 
 
 	
