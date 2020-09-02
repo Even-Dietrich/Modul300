@@ -1,0 +1,56 @@
+Vagrant.configure("2") do |config|
+
+	#Erster Server, fileserver
+	config.vm.define "srv03-lx-Fileserver" do |subconfig|
+		subconfig.vm.provider "virtualbox" do |vb|
+			vb.name = "srv03-lx-fileserver"
+			vb.memory = "1024"
+		end
+
+		subconfig.vm.box = "ubuntu/xenial64"
+		subconfig.vm.hostname = "srv03-lx-fileserver"
+		subconfig.vm.network :private_network, ip: "10.0.0.12"
+		#Shell für den Fileserver 
+		subconfig.vm.provision "shell", inline: <<-SHELL
+
+			#Diverse Services installieren
+			set -o xtrace
+			sudo apt-get update
+            sudo apt-get -y install samba
+            #Creat Folder
+            sudo mkdir /home/sambashare
+            #Share Konfiguration
+            sudo nano /etc/samba/smb.conf
+
+            sudo service smbd restart
+	#Firewallrule aktualisieren
+            sudo ufw allow samba
+		#Backup einrichten
+		sudo apt-get update
+		sudo apt-get -y install rsync 
+		sudo rsync -avz /home/sambashare 10.0.0.13/backups 
+            SHELL
+
+   #Zweiter Server, Datenbankserver
+	config.vm.define "srv04_lx_fileserver" do |subconfig|
+		subconfig.vm.provider "virtualbox" do |vb|
+			vb.name = "srv04_lx_fileserver"
+			vb.memory = "512"
+		end
+
+		subconfig.vm.box = "ubuntu/xenial64"
+		subconfig.vm.hostname = "srv04-lx-fileserver"
+		subconfig.vm.network :private_network, ip: "10.0.0.13"
+
+		#Shell srv04
+		subconfig.vm.provision "shell", inline: <<-SHELL
+		
+
+
+
+
+	#Alle Services neu starten
+	sudo systemctl restart apache2.service 
+
+	SHELL
+end 
