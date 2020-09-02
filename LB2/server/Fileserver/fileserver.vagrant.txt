@@ -42,7 +42,7 @@ Vagrant.configure("2") do |config|
 		sudo apt-get update
 		sudo apt-get -y install rsync 
 		#Backup einrichten
-	#	rsync -a /home/sambashare root@10.0.0.13/home/backup
+		sudo rsync -a /home/sambashare /srv04_lx_fileserver
         SHELL
 		end
 		#Zweiter Server, Datenbankserver
@@ -62,12 +62,7 @@ Vagrant.configure("2") do |config|
 				sudo mkdir /home/backup
 
 
-
-
-
-	#Alle Services neu starten
-	sudo systemctl restart apache2.service 
-
+	
 	SHELL
 	end
 end
