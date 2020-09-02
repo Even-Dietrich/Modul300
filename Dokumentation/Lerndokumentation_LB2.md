@@ -9,7 +9,7 @@ Git-Client wurde heruntergeladen und installiert.</p>
 
 <p>Dokumentation ist als Mark down vorhanden und wird mit Visual Studio Code bearbeiten</p>
 
-<1>Persönlicher Wissenstand:</h1>
+<h1>Persönlicher Wissenstand:</h1>
 
 <h2>Adam:</h2>
 
