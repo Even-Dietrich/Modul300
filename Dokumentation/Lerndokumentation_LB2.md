@@ -110,4 +110,3 @@ Wichtige Befehle für Vagrant:<br>
 - vagrant up (erzeugt und konfiguriert die VM anhand des vagrantfiles)<br>
 - vagrant ssh (verbindet per ssh mit VM)<br>
 - vagrant halt (beendet die VM)<br>
->>>>>>> 83a3da7b54496bbf439027b889bb3119f65164ee
