@@ -13,24 +13,30 @@
 </p>
 <p>K3
     <ul>
-        <li>Bestehende vm aus Vagrant-Cloud einrichten</li>
-        <li>Kennt die Vagrant-Befehle</li>
-        <li>Eingerichtete Umgebung ist dokumentiert (Umgebungs-Variablen, Netzwerkplan gezeichnet, Sicherheitsaspekte)</li>
-        <li>Funktionsweise getestet inkl. Dokumentation der Testfälle- andere, vorgefertigte vm auf eigenem Notebook aufgesetzt</li>
-        <li>Projekt mit Git und Mark Down dokumentiert</li>
-        <li>Ein Git-Client wird verwendet</li>
-        <li>Ein Git-Client wird verwendet</li
+       <li>Bestehende vm aus Vagrant-Cloud einrichten</li>
+	   Alle Vagrantfiles im Verzeichnis Modul300/LB2/server<br>
+       <li>Kennt die Vagrant-Befehle</li>   
+	Wichtige Befehle für Vagrant:<br>
+		- vagrant init ubuntu/xenial64 (init erstellt ein leeres vagrantfile, in diesem Beispiel wird eines mit ubuntu erstellt )<br>
+		- vagrant up (erzeugt und konfiguriert die VM anhand des vagrantfiles)<br>
+		- vagrant ssh (verbindet per ssh mit VM)<br>
+		- vagrant halt (beendet die VM)<br>  
+       <li>Eingerichtete Umgebung ist dokumentiert (Umgebungs-Variablen, Netzwerkplan gezeichnet, Sicherheitsaspekte)</li>
+       <li>Funktionsweise getestet inkl. Dokumentation der Testfälle- andere, vorgefertigte vm auf eigenem Notebook aufgesetzt</li>
+	    VM können mit Vagrantfile erfolreich erstellt werden. <br>
+       <li>Projekt mit Git und Mark Down dokumentiert</li>
+       <li>Ein Git-Client wird verwendet</li>
+       <li>Ein Git-Client wird verwendet</li
      </ul>
 </p>
 <p>K4 Sicherheitsaspekte sind implementiert-</b>
-
 <ul>
-    <li>Firewall eingerichtet inkl. Rules</li>
-    <li>Reverse-Proxy eingerichtet</li>
-    <li>Benutzer- und Rechtevergabe ist eingerichtet</li>
-    <li>Zugang mit SSH-Tunnel abgesichert</li>
-    <li>Sicherheitsmassnahmen sind dokumentiert</li>  
-	<li>Projekt mit Git und Mark Down dokumentiert</li>  
+   <li>Firewall eingerichtet inkl. Rules</li>
+   <li>Reverse-Proxy eingerichtet</li>
+   <li>Benutzer- und Rechtevergabe ist eingerichtet</li>
+   <li>Zugang mit SSH-Tunnel abgesichert</li>
+   <li>Sicherheitsmassnahmen sind dokumentiert</li>  
+   <li>Projekt mit Git und Mark Down dokumentiert</li>  
 
 	
 </ul>
@@ -65,11 +71,6 @@ Heute habe ich die zwei Tools Github und Vagrant kennengelernt. Bei Github konnt
 Vagrant ist dazu da um einfach automatisch VM zu installieren. Da wir ich die VM nutze war schon alles installiert und ich musste mich nur noch in die Anleitung reinslesen. Per Bash Terminal können wir nun darauf zugreigen und damit arbeiten<br>
 
 
-Wichtige Befehle für Vagrant:<br>
-- vagrant init ubuntu/xenial64 (init erstellt ein leeres vagrantfile, in diesem Beispiel wird eines mit ubuntu erstellt )<br>
-- vagrant up (erzeugt und konfiguriert die VM anhand des vagrantfiles)<br>
-- vagrant ssh (verbindet per ssh mit VM)<br>
-- vagrant halt (beendet die VM)<br>
 
 <p>Stand 02.09.2020</p>
 Heute habe ich viel Neues über den Fileshare Dienst samba gelernt. Ich habe erfolreich ein share erstellt und diesen per Vagrant automatisiert. <br>
@@ -84,8 +85,9 @@ Auch habe ich heute den Synchronistations Service gebraucht. <br>
 Wichtige Befehle zu rsync:<br>
 - sudo rsync -a /home/sambashare /srv04_lx_fileserver (rysnc [Option] [Daten] [Ziel], angeben des Backupziels und den zu sicherenden Daten)<br>
 - 	sudo apt-get -y install rsync (Dienst installieren) <br>
+<br>
 <h2>Jason:</h2>
-
+<br>
 <p>Stand 19.08.2020<br>
 Ich habe gelernt wie man mit GitHub umgeht und ein Repository erstellt und synchonisieren kann.<br>
  
