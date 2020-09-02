@@ -30,16 +30,7 @@ Desweiteren habe ich Vagrant kennen gerlernt. Damit kann man Konfigurationsdatei
  
 <h2>Even:</h2>
 <p>Stand 19.08.2020<br>
-Heute hab ich gelernt wie man mit Github arbeitet, ein Repository erstellt und dieses dann mit der VM per SSH verbinden kann. Da ich die VM von der TBZ nutzte musste ich nicht installieren. 
-Github:
- SSH Key erstellen: 
- 
-
-Zu Github kamm nochVirtualBox und Vagrant.<br>
-VirtalBox ist ähnlich zu VMWare. Man nutzt es zum erstellen und verwalten von Virtuellen Maschinen<br>
-
-VirtalBox ist eine Plattform um VMs zu erstellen und verwalten, ähnlich zu VMWare.<br>
-
+Heute habe ich die zwei Tools Github und Vagrant kennengelernt. Bei Github konnte ich erfolgreich ein Repository erstellen und dieses per ssh mit dem Bash Terminal verküpfen. 
 Vagrant ist dazu da um einfach automatisch VM zu installieren. Da wir ich die VM nutze war schon alles installiert und ich musste mich nur noch in die Anleitung reinslesen. Per Bash Terminal können wir nun darauf zugreigen und damit arbeiten<br>
 
 
@@ -49,6 +40,19 @@ Wichtige Befehle für Vagrant:<br>
 - vagrant ssh (verbindet per ssh mit VM)<br>
 - vagrant halt (beendet die VM)<br>
 
+<p>Stand 02.09.2020</p>
+Heute habe ich viel Neues über den Fileshare Dienst samba gelernt. Ich habe erfolreich ein share erstellt und diesen per Vagrant automatisiert. <br>
+Wichtige Befehle zu Samba:<br>
+- sudo apt-get -y install samba-common samba, sudo apt-get -y install tdb-tools (installiert den Dienst und die Benutzerdatenbank von samba)<br>
+- sudo echo "xxx" >> /etc/samba/smb.conf (Konfigurationsfile anpassen, zum erstellen des Shares/Freigaben)<br>
+- sudo mkdir /home/sambashare (Ordner erstellen)<br>
+- sudo service smbd restart (Samba Service neustarten)<br>
+- sudo ufw allow samba (Firewall freischaltung für den Service Samba)<br>
+
+Auch habe ich heute den Synchronistations Service gebraucht. <br>
+Wichtige Befehle zu rsync:<br>
+- sudo rsync -a /home/sambashare /srv04_lx_fileserver (rysnc [Option] [Daten] [Ziel], angeben des Backupziels und den zu sicherenden Daten)<br>
+- 	sudo apt-get -y install rsync (Dienst installieren) <br>
 <h2>Jason:</h2>
 
 <p>Stand 19.08.2020<br>
