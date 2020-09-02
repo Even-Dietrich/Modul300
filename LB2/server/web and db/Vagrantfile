@@ -83,7 +83,4 @@ Vagrant.configure("2") do |config|
 
 		SHELL
 	end
-	#config.vm.provision "shell", inline: <<-SHELL 
-	#Konfig für alle Virtuellen Maschienen
-	#SHELL
 end
