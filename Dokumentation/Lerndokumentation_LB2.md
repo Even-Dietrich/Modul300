@@ -43,12 +43,14 @@
 <h1>Netzwerkplan</h1>
 Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfile erstellen können.<br>
 
-<img src=Dokumentation/img/Netzwerkplan.jpg>
+
 
 <h1>Persönlicher Wissenstand:</h1>
 <br>
 <h2>Adam:</h2>
 <br>
+<p>Stand vor Kursbeginn<br>
+Ich habe vor dem Beginn des Kurses noch keine ahnung von GitHub und das Erstemal im Modul 300 damit gearbeitet. Ich kannte jedoch GitLab von meinem Geschäft, konnte aber bis jetzt noch nie damit in Kontakt gekommen.<br>
 
 <h2>Alex:</h2>
 
