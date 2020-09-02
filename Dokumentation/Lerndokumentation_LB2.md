@@ -43,7 +43,7 @@
 <h1>Netzwerkplan</h1>
 Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfile erstellen können.<br>
 
-<img src="Dokumentation/img/Netzwerkplan.jpg"/>
+<img src="Modul300/Dokumentation/img/Netzwerkplan.jpg">
 <h1>Persönlicher Wissenstand:</h1>
 <br>
 <h2>Adam:</h2>
