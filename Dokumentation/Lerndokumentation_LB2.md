@@ -16,11 +16,6 @@
        <li>Bestehende vm aus Vagrant-Cloud einrichten</li>
 	   Alle Vagrantfiles im Verzeichnis Modul300/LB2/server<br>
        <li>Kennt die Vagrant-Befehle</li>   
-	Wichtige Befehle für Vagrant:<br>
-		- vagrant init ubuntu/xenial64 (init erstellt ein leeres vagrantfile, in diesem Beispiel wird eines mit ubuntu erstellt )<br>
-		- vagrant up (erzeugt und konfiguriert die VM anhand des vagrantfiles)<br>
-		- vagrant ssh (verbindet per ssh mit VM)<br>
-		- vagrant halt (beendet die VM)<br>  
        <li>Eingerichtete Umgebung ist dokumentiert (Umgebungs-Variablen, Netzwerkplan gezeichnet, Sicherheitsaspekte)</li>
        <li>Funktionsweise getestet inkl. Dokumentation der Testfälle- andere, vorgefertigte vm auf eigenem Notebook aufgesetzt</li>
 	    VM können mit Vagrantfile erfolreich erstellt werden. <br>
@@ -44,6 +39,12 @@
 
 <br>
 <br>
+
+<h1>Netzwerkplan</h1>
+Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfile erstellen können.<br>
+
+
+
 <h1>Persönlicher Wissenstand:</h1>
 <br>
 <h2>Adam:</h2>
