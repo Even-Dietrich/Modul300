@@ -22,6 +22,20 @@
         <li>Ein Git-Client wird verwendet</li
      </ul>
 </p>
+<p>K4 Sicherheitsaspekte sind implementiert-</b>
+
+<ul>
+    <li>Firewall eingerichtet inkl. Rules</li>
+    <li>Reverse-Proxy eingerichtet</li>
+    <li>Benutzer- und Rechtevergabe ist eingerichtet</li>
+    <li>Zugang mit SSH-Tunnel abgesichert</li>
+    <li>Sicherheitsmassnahmen sind dokumentiert</li>  
+	<li>Projekt mit Git und Mark Down dokumentiert</li>  
+
+	
+</ul>
+</p>
+
 <br>
 <br>
 <h1>Persönlicher Wissenstand:</h1>
