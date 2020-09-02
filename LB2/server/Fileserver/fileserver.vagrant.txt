@@ -28,20 +28,46 @@ Vagrant.configure("2") do |config|
 			sudo echo "guest account = nobody" >> /etc/samba/smb.conf
 			sudo echo "writeable = yes" >> /etc/samba/smb.conf
 			sudo echo "comment= Samaba 
-				path= /home/sambashare
+				 path= /home/sambashare
 				read only = no 
 				browsable = yes" >> /etc/samba/smb.conf
 			   #Creat Folder
 				sudo mkdir /home/sambashare
 			sudo service smbd restart
-			#Benutzerverwaltung 
-			sudo  adduser --no-create-home --disabled-login --shell /bin/false USERNAME
+			
 			
 		#Firewallrule aktualisieren
             sudo ufw allow samba
-		#Backup einrichten
+		#Backup Installieren
 		sudo apt-get update
 		sudo apt-get -y install rsync 
-		
-            SHELL
+		#Backup einrichten
+	#	rsync -a /home/sambashare root@10.0.0.13/home/backup
+        SHELL
+		end
+		#Zweiter Server, Datenbankserver
+	config.vm.define "srv04_lx_fileserver" do |subconfig|
+		subconfig.vm.provider "virtualbox" do |vb|
+			vb.name = "srv04_lx_fileserver"
+			vb.memory = "512"
+		end
+
+		subconfig.vm.box = "ubuntu/trusty64"
+		subconfig.vm.hostname = "srv04-lx-fileserver"
+		subconfig.vm.network :private_network, ip: "10.0.0.13"
+
+		#Shell srv04
+		subconfig.vm.provision "shell", inline: <<-SHELL
+		  #Creat Folder
+				sudo mkdir /home/backup
+
+
+
+
+
+	#Alle Services neu starten
+	sudo systemctl restart apache2.service 
+
+	SHELL
+	end
 end
