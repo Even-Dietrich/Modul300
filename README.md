@@ -2,5 +2,6 @@
 <br>
 <p>Adam, Alex, Even und Jason</p>
 <br>
-<p>Die Vagrantfiles für die LB2 befindet sich /LB2/server<br>
-Die Lerndoku befindet sich /Lerndokumentation</p>
+<p>Die Vagrantfiles für die LB2 befindet sich /LB2/server/...<br>
+Die Lerndoku befindet sich im Ordner Dokumentation</p>
+
