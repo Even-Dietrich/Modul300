@@ -2,6 +2,7 @@
 <br>
 <p>K1 Umgebung wurde auf dem Notebook/VM in der TBZ cloud eingerichtet<br>
 <p>K2 Unsere Lernumgebung einrichten</b>
+
 <ul>
     <li>Ein Git-Client wird verwendet</li>
     <li>Dokumentation ist als Markdown vorhanden</li>
@@ -9,6 +10,17 @@
     <li>Markdwon ist Strukturiert</li>
     <li>Persönlicher Wissenstand wird dokummentiert und festgehalten</li>   
 </ul>
+</p>
+<p>K3
+    <ul>
+        <li>Bestehende vm aus Vagrant-Cloud einrichten</li>
+        <li>Kennt die Vagrant-Befehle</li>
+        <li>Eingerichtete Umgebung ist dokumentiert (Umgebungs-Variablen, Netzwerkplan gezeichnet, Sicherheitsaspekte)</li>
+        <li>Funktionsweise getestet inkl. Dokumentation der Testfälle- andere, vorgefertigte vm auf eigenem Notebook aufgesetzt</li>
+        <li>Projekt mit Git und Mark Down dokumentiert</li>
+        <li>Ein Git-Client wird verwendet</li>
+        <li>Ein Git-Client wird verwendet</li
+     </ul>
 </p>
 <br>
 <br>
