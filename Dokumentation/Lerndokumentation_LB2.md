@@ -56,7 +56,7 @@ Ich habe vor dem Beginn des Kurses noch keine ahnung von GitHub und das Erstemal
 Heute habe ich 2 Tools kennengelernt GitHub und Varagnt. Vargant ist ein Tool um automatisch VM aufzusetzen. Mithilfe von dem Bash Terminal können wir nun drauf zugreifen und so damit Arbeiten.<br>
 
 <p>Stand 02.09.2020</p>
-Ich habe heute von Zuhause aus gearbeitet weil es mir nicht sehr wohl war. Ich konnte Jedoch mit mit Hilfe meiner Teamkollegen trozdem vorankommen. 
+Ich habe heute von Zuhause aus gearbeitet weil es mir nicht sehr wohl war. Ich konnte Jedoch mit der Hilfe meiner Teamkollegen trozdem vorankommen. Ich habe den Fileshare-service Samba besser kennengelernt, zusammen mit Even haben wir einen Share erstellt per Vagant automatisiert.
 
 
 <h2>Alex:</h2>
