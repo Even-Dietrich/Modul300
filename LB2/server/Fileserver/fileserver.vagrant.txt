@@ -1,41 +1,40 @@
 Vagrant.configure("2") do |config|
 
-	#Erster Server, fileserver
-	config.vm.define "srv03-lx-Fileserver" do |subconfig|
+	#Erster Server, Fileserver
+	config.vm.define "srv03-lx-fileserver" do |subconfig|
 		subconfig.vm.provider "virtualbox" do |vb|
 			vb.name = "srv03-lx-fileserver"
 			vb.memory = "1024"
 		end
 
 		subconfig.vm.box = "ubuntu/xenial64"
-		subconfig.vm.hostname = "srv03-lx-fileserver"
+		subconfig.vm.hostname = "srv01-lx-webserver"
 		subconfig.vm.network :private_network, ip: "10.0.0.12"
-		#Shell für den Fileserver 
+
+		#Shell für den Webserver 
 		subconfig.vm.provision "shell", inline: <<-SHELL
 
-			#Diverse Services installieren
+			
+			#Samba installieren
 			set -o xtrace
 			sudo apt-get update
-            sudo apt-get -y install samba
-            #Creat Folder
-            sudo mkdir /home/sambashare
-            #Share Konfiguration
-            sudo nano /etc/samba/smb.conf
+            		sudo apt-get -y install samba
+			#Samba konfigurieren 
+			#Samba Service neustarten
+			sudo service smbd restart
+			
+			
+			#Backup Dienst installieren
+			sudo apt-get update
+			sudo apt-get -y install rsync 
+		SHELL
+	end
 
-            sudo service smbd restart
-	#Firewallrule aktualisieren
-            sudo ufw allow samba
-		#Backup einrichten
-		sudo apt-get update
-		sudo apt-get -y install rsync 
-		sudo rsync -avz /home/sambashare 10.0.0.13/backups 
-            SHELL
-
-   #Zweiter Server, Datenbankserver
-	config.vm.define "srv04_lx_fileserver" do |subconfig|
+	#Zweiter Server, Backupserver
+	config.vm.define "srv04-lx-fileserver" do |subconfig|
 		subconfig.vm.provider "virtualbox" do |vb|
-			vb.name = "srv04_lx_fileserver"
-			vb.memory = "512"
+			vb.name = "srv04-lx-fileserver"
+			vb.memory = "1024"
 		end
 
 		subconfig.vm.box = "ubuntu/xenial64"
@@ -44,13 +43,23 @@ Vagrant.configure("2") do |config|
 
 		#Shell srv04
 		subconfig.vm.provision "shell", inline: <<-SHELL
-		
+			
 
+		SHELL
+	end
 
+	config.vm.provision "shell", inline: <<-SHELL 
+	#Konfig für alle Virtuellen Maschienen
+
+	#Installation von Applikationen
+    set -o xtrace
+	sudo apt-get update
+	sudo apt-get upgrade
+	#sudo apt-get -y install apache2
 
 
 	#Alle Services neu starten
 	sudo systemctl restart apache2.service 
 
 	SHELL
-end 
+end
