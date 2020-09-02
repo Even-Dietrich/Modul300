@@ -64,10 +64,11 @@ Vagrant.configure("2") do |config|
 			sudo apt-get -y install php libapache2-mod-php php-curl php-cli php-mysql php-gd mysql-client mysql-server
 
 			#UFW Konfigurieren
-			sudo ufw disable
-			#sudo ufw enable
+			sudo ufw enable
 			#sudo ufw allow mysql
+			sudo ufw allow from 10.0.0.10 to any port 3306 #Remote Server darf auf Mysql zugreiffen
 			sudo systemctl start mysql
+
 
 			#Erstellen der Datenbank und dem User für den srv01
 			mysql -uroot -padmin -e "CREATE DATABASE db_wordpress;"
@@ -79,7 +80,6 @@ Vagrant.configure("2") do |config|
 			#exit
 			sudo systemctl restart mysql
 			#Neustarten, damit alle Services neu gestartet werden
-			sudo reboot
 			sudo reboot
 		SHELL
 	end
