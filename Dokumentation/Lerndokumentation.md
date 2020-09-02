@@ -1,9 +1,9 @@
 19.08.2020
 
-#Allgemeine Ziele
+<h1>Allgemeine Ziele</h1>
 
-Github Account wurde erstellt
-Git-Client wurde heruntergeladen und installiert.
+<p>Github Account wurde erstellt</br>
+Git-Client wurde heruntergeladen und installiert.</p>
 
 [![Foo](img/git_installed.png)]
 
