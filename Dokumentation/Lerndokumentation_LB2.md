@@ -52,6 +52,13 @@ Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfi
 <p>Stand vor Kursbeginn<br>
 Ich habe vor dem Beginn des Kurses noch keine ahnung von GitHub und das Erstemal im Modul 300 damit gearbeitet. Ich kannte jedoch GitLab von meinem Geschäft, konnte aber bis jetzt noch nie damit in Kontakt gekommen.<br>
 
+<p>Stand 19.08.2020<br>
+Heute habe ich 2 Tools kennengelernt GitHub und Varagnt. Vargant ist ein Tool um automatisch VM aufzusetzen. Mithilfe von dem Bash Terminal können wir nun drauf zugreifen und so damit Arbeiten.<br>
+
+<p>Stand 02.09.2020</p>
+Ich habe heute von Zuhause aus gearbeitet weil es mir nicht sehr wohl war. Ich konnte Jedoch mit mit Hilfe meiner Teamkollegen trozdem vorankommen. 
+
+
 <h2>Alex:</h2>
 
 <p>Stand 19.08.2020
