@@ -29,10 +29,9 @@ git push Die Änderungen werden auf GitHub geladen.<br>
 
 Desweiteren habe ich Vagrant kennen gerlernt. Damit kann man Konfigurationsdateien erstellen für VM, damit man nicht immer die VM manuell aufsetzten muss. </p>
 
-<h2>Even:</h2>
-<<<<<<< HEAD
+
 <br>
-<h2>Jason:</h2>
+<h2>Even:</h2>
 <br>
 =======
 <p>Stand 19.08.2020<br>
