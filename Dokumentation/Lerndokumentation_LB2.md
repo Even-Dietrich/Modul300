@@ -4,8 +4,6 @@
 <br>
 
 ## K1 Umgebung wurde auf dem Notebook/VM in der TBZ cloud eingerichtet
-
-
 <br>
 
 ## K2 Unsere Lernumgebung einrichten
