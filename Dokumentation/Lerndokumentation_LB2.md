@@ -51,19 +51,19 @@ Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfi
 <br>
 <h2>Adam:</h2>
 <br>
-<p>Stand vor Kursbeginn</p><br>
+Stand vor Kursbeginn<br>
 Ich habe vor dem Beginn des Kurses noch keine ahnung von GitHub und das Erstemal im Modul 300 damit gearbeitet. Ich kannte jedoch GitLab von meinem Geschäft, konnte aber bis jetzt noch nie damit in Kontakt gekommen.<br>
 
-<p>Stand 19.08.2020<br>
+Stand 19.08.2020<br>
 Heute habe ich 2 Tools kennengelernt GitHub und Varagnt. Vargant ist ein Tool um automatisch VM aufzusetzen. Mithilfe von dem Bash Terminal können wir nun drauf zugreifen und so damit Arbeiten.<br>
 
-<p>Stand 02.09.2020<br>
+Stand 02.09.2020<br>
 Ich habe heute von Zuhause aus gearbeitet weil es mir nicht sehr wohl war. Ich konnte Jedoch mit der Hilfe meiner Teamkollegen trozdem vorankommen. Ich habe den Fileshare-service Samba besser kennengelernt, zusammen mit Even haben wir einen Share erstellt per Vagant automatisiert.
 
 
 <h2>Alex:</h2>
 
-<p>Stand 19.08.2020
+Stand 19.08.2020
 Heute habe ich gelernt, wie man ein Github Repository mit meinem PC synchronisieren kann.<br>
 
 Wichtige Befehl für den Git-Client:<br>
@@ -71,22 +71,22 @@ git add -A änderungen werden erkennt<br>
 git commit -m "Kommentar" Die Änderungen werden auf dem Gerät gespeichert (lokal)<br>
 git push Die Änderungen werden auf GitHub geladen.<br>
 
-Desweiteren habe ich Vagrant kennen gerlernt. Damit kann man Konfigurationsdateien erstellen für VM, damit man nicht immer die VM manuell aufsetzten muss. </p>
+Desweiteren habe ich Vagrant kennen gerlernt. Damit kann man Konfigurationsdateien erstellen für VM, damit man nicht immer die VM manuell aufsetzten muss.
 
 
 <br>
 <h2>Even:</h2>
 <br>
 
-<p>Stand vor Kurbeginn<br>
+Stand vor Kurbeginn<br>
 Eigentlich hatte ich kein richtig grossen Vorwissen zum Beginn dieses Kurses. Ich kannte zwar die wichtigsten Befehle von Windows hatte aber keine Erfahrung damit<br>
-<p>Stand 19.08.2020<br>
+Stand 19.08.2020<br>
 Heute habe ich die zwei Tools Github und Vagrant kennengelernt. Bei Github konnte ich erfolgreich ein Repository erstellen und dieses per ssh mit dem Bash Terminal verküpfen. 
 Vagrant ist dazu da um einfach automatisch VM zu installieren. Da wir ich die VM nutze war schon alles installiert und ich musste mich nur noch in die Anleitung reinslesen. Per Bash Terminal können wir nun darauf zugreigen und damit arbeiten<br>
 
 
 
-<p>Stand 02.09.2020</p><br>
+Stand 02.09.2020<br>
 Heute habe ich viel Neues über den Fileshare Dienst samba gelernt. Ich habe erfolreich ein share erstellt und diesen per Vagrant automatisiert. <br>
 Wichtige Befehle zu Samba:<br>
 - `sudo apt-get -y install samba-common samba, sudo apt-get -y install tdb-tools` (installiert den Dienst und die Benutzerdatenbank von samba)<br>
@@ -98,11 +98,11 @@ Wichtige Befehle zu Samba:<br>
 Auch habe ich heute den Synchronistations Service gebraucht. <br>
 Wichtige Befehle zu rsync:<br>
 - `sudo rsync -a /home/sambashare /srv04_lx_fileserver` (rysnc [Option] [Daten] [Ziel], angeben des Backupziels und den zu sicherenden Daten)<br>
-- 	`sudo apt-get -y install rsync` (Dienst installieren) <br>
+- `sudo apt-get -y install rsync` (Dienst installieren)
 <br>
 <h2>Jason:</h2>
 <br>
-<p>Stand 19.08.2020<br>
+Stand 19.08.2020<br>
 Ich habe gelernt wie man mit GitHub umgeht und ein Repository erstellt und synchonisieren kann.<br>
  
 Für den Git-Client gibt es diverse wichtige Befehle:<br>
