@@ -47,6 +47,8 @@ Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfi
 <img src=Dokumentation/img/Netzwerkplan.jpg>
 
 <h1>Persönlicher Wissenstand:</h1>
+***
+
 <br>
 <h2>Adam:</h2>
 <br>
