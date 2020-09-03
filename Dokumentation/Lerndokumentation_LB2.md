@@ -82,6 +82,10 @@ Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantfil
 
 ## Scripts
 
+Im Vagrantfile wird der VM Shell Commands mitgegeben welche nach der Installation automatisch ausgeführt werden. Die Commands sind standard Command aus dem Linux Terminal.
+
+Beim ProxyServer werden folgende Commands ausgeführt. 
+
 ```Ruby
 #Shell für den Proxy Server
 config.vm.provision "shell", inline: <<-SHELL
