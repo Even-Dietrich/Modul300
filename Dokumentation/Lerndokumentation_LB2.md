@@ -1,5 +1,8 @@
-<h1>Allgemeine Bewertungskriterien</h1>
+<h1>LB2</h1>
 <br>
+
+<h2>Software:</h2>
+
 <p>K1 Umgebung wurde auf dem Notebook/VM in der TBZ cloud eingerichtet<br>
 <p>K2 Unsere Lernumgebung einrichten</b>
 
@@ -11,6 +14,7 @@
     <li>Persönlicher Wissenstand wird dokummentiert und festgehalten</li>   
 </ul>
 </p>
+<br>
 <p>K3
     <ul>
        <li>Bestehende vm aus Vagrant-Cloud einrichten</li>
@@ -21,10 +25,11 @@
 	    VM können mit Vagrantfile erfolreich erstellt werden. <br>
        <li>Projekt mit Git und Mark Down dokumentiert</li>
        <li>Ein Git-Client wird verwendet</li>
-       <li>Ein Git-Client wird verwendet</li
-     </ul>
+       <li>Ein Git-Client wird verwendet</li>
+    </ul>
 </p>
-<p>K4 Sicherheitsaspekte sind implementiert-</b>
+<br>
+<p>K4 Sicherheitsaspekte sind implementiert</b>
 <ul>
    <li>Firewall eingerichtet inkl. Rules</li>
    <li>Reverse-Proxy eingerichtet</li>
@@ -32,8 +37,6 @@
    <li>Zugang mit SSH-Tunnel abgesichert</li>
    <li>Sicherheitsmassnahmen sind dokumentiert</li>  
    <li>Projekt mit Git und Mark Down dokumentiert</li>  
-
-	
 </ul>
 </p>
 
