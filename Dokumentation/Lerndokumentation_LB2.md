@@ -46,13 +46,11 @@ VM können mit Vagrantfile erfolreich erstellt werden.
 ## Netzwerkplan
 Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfile erstellen können.<br>
 
-![alt text](https://github.com/Even-Dietrich/Modul300/tree/master/Dokumentation/img/Netzwerkplan.jpg "Netzwerkplan")
+![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/tree/master/Dokumentation/img/Netzwerkplan.jpg "Netzwerkplan")
 
 # Persönlicher Wissenstand:
-<br>
 
 ## Adam:
-<br>
 
 #### Stand vor Kursbeginn<br>
 Ich habe vor dem Beginn des Kurses noch keine ahnung von GitHub und das Erstemal im Modul 300 damit gearbeitet. Ich kannte jedoch GitLab von meinem Geschäft, konnte aber bis jetzt noch nie damit in Kontakt gekommen.<br>
@@ -80,7 +78,6 @@ Desweiteren habe ich Vagrant kennen gerlernt. Damit kann man Konfigurationsdatei
 <br>
 
 ## Even:
-<br>
 
 #### Stand vor Kurbeginn<br>
 Eigentlich hatte ich kein richtig grossen Vorwissen zum Beginn dieses Kurses. Ich kannte zwar die wichtigsten Befehle von Windows hatte aber keine Erfahrung damit<br>
@@ -106,7 +103,6 @@ Wichtige Befehle zu rsync:<br>
 <br>
 
 ## Jason:
-<br>
 
 #### Stand 19.08.2020
 Ich habe gelernt wie man mit GitHub umgeht und ein Repository erstellt und synchonisieren kann.<br>
@@ -129,7 +125,8 @@ Wichtige Befehle für Vagrant:<br>
 - `vagrant ssh` (verbindet per ssh mit VM)<br>
 - `vagrant halt` (beendet die VM)<br>
 <br>
-<p>Stand 02.09.2020<br>
+
+## Stand 02.09.2020
 Ich habe heute den Kapitel 25 Sicherheit durchgearbeitet. Ich habe dabei vagrant näher kennengelernt und gelernt wie man mit einem Vagrantfile einen Server mit ReverseProxy<br>
 und Firewall einstellungen als VM erstellt. Ausserdem habe ich gelernt wie man ein vagrantfile richtig konfigueriert und damit eine VM erstellt.<br>
 
