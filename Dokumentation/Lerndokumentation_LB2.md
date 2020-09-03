@@ -1,3 +1,5 @@
+### Modul300 Dokumentation
+
 # Allgemeine Bewertungskriterien
 <br>
 
@@ -51,6 +53,30 @@ VM können mit Vagrantfile erfolreich erstellt werden.
 - Vagrant
 
 ## Unsere Lösung:
+
+Wir haben uns dazu entschieden eine Umgebung mit insgesamt 5 Servern:
+
+- Reverse Proxy (srv05_lx_proxy)
+- Fileserver (srv03_lx_fileserver)
+- Backupserver (srv04_lx_fileserver)
+- Webserver (srv01_lx_webserver)
+- Datenbankserver (srv02_lx_databaseserver)
+
+Siehe auch Netzwerkplan.
+
+Alle Server werden aus einem Vagrantfile vollautomatisch erstellt und konfiguriert.
+
+## Hardware
+
+Die Hardware wird ebenfalls durch das Vagrantfile konfiguriert (Beispiel: Proxyserver): 
+
+```Ruby
+    config.vm.define "srv05-lx-proxy" do |subconfig|
+        subconfig.vm.provider "virtualbox" do |vb|
+            vb.name = "proxy"
+            vb.memory = "512"
+        end
+```
 
 
 
