@@ -133,13 +133,12 @@ Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. 
     #Grundkonfiguration der VM
     config.vm.define "srv05-lx-proxy" do |subconfig|    #Name für Vagrant
         subconfig.vm.provider "virtualbox" do |vb|      
-            vb.name = "srv05-lx-proxy"
-            vb.memory = "512"
+            vb.name = "srv05-lx-proxy"  #
+            vb.memory = "512"   #Arbeitsspeicher
         end
 
-    subconfig.vm.box = "ubuntu/xenial64"
-	subconfig.vm.hostname = "srv05-lx-proxy"
-	subconfig.vm.network :private_network, ip: "10.0.0.10"
-	subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
-    subconfig.vm.network :private_network, ip: "10.0.0.14"
+    subconfig.vm.box = "ubuntu/xenial64"    #Vagrant Box
+	subconfig.vm.hostname = "srv05-lx-proxy"    #Hostname
+	subconfig.vm.network :private_network, ip: "10.0.0.14"  #IP-Konfiguration
+	subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true  #Port weiterleitung
 ```
