@@ -145,7 +145,7 @@ Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. 
 Mit Vagrant kann man der VM mitgeben was Sie beim aufsetzen installieren soll. In diesem Fall wird hier apache2 installiert, proxy Funktionen aktiviert, konfigurations-Files importiert und Firewall einstellungen vorgenommen.
 <br>
 
-```Shell
+```Ruby
   #Shell für den Proxy Server
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
