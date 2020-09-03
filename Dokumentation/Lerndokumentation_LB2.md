@@ -78,12 +78,21 @@ Die Hardware wird ebenfalls durch das Vagrantfile konfiguriert (Beispiel: Proxys
         end
 ```
 
-
-
 ## Netzwerkplan
-Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfile erstellen können.<br>
+Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantfile erstellen können.<br>
 
 ![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/tree/master/Dokumentation/img/Netzwerkplan.jpg "Netzwerkplan")
+
+## Sicherheit
+
+Mit den Shell Scripts welche im Vagrantfile hinterlegt sind werden Firewall Regeln erstellt und die Firewall aktiviert.
+
+Folgende Firewall Regeln sind konfiguriert:
+```Shell
+    sudo ufw allow 22/tcp
+    sudo ufw allow 80/tcp
+    sudo ufw -f enable
+```
 
 # Persönlicher Wissenstand:
 
