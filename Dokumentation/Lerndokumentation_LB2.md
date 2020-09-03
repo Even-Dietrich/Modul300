@@ -119,6 +119,8 @@ Folgende Firewall Regeln sind konfiguriert:
     sudo ufw allow 80/tcp
     sudo ufw -f enable
 ```
+<br>
+<br>
 
 # Persönlicher Wissenstand:
 
