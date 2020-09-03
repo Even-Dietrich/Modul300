@@ -126,7 +126,8 @@ Wichtige Befehle für Vagrant:<br>
 Ich habe heute den Kapitel 25 Sicherheit durchgearbeitet. Ich habe dabei vagrant näher kennengelernt und gelernt wie man mit einem Vagrantfile einen Server mit ReverseProxy<br>
 und Firewall einstellungen als VM erstellt. Ausserdem habe ich gelernt wie man ein vagrantfile richtig konfigueriert und damit eine VM erstellt.<br>
 
-<p>Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. </p>
+Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. Der Folgende Code ist die Grundkonfiguration einer VM:</p><br>
+
 
 ```Ruby
     #Grundkonfiguration der VM
