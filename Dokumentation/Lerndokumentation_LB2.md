@@ -57,13 +57,13 @@ Ich habe vor dem Beginn des Kurses noch keine ahnung von GitHub und das Erstemal
 <p>Stand 19.08.2020<br>
 Heute habe ich 2 Tools kennengelernt GitHub und Varagnt. Vargant ist ein Tool um automatisch VM aufzusetzen. Mithilfe von dem Bash Terminal können wir nun drauf zugreifen und so damit Arbeiten.<br>
 
-<p>Stand 02.09.2020</p>
+<p>Stand 02.09.2020<br>
 Ich habe heute von Zuhause aus gearbeitet weil es mir nicht sehr wohl war. Ich konnte Jedoch mit der Hilfe meiner Teamkollegen trozdem vorankommen. Ich habe den Fileshare-service Samba besser kennengelernt, zusammen mit Even haben wir einen Share erstellt per Vagant automatisiert.
 
 
 <h2>Alex:</h2>
 
-<p>Stand 19.08.2020
+<p>Stand 19.08.2020<br>
 Heute habe ich gelernt, wie man ein Github Repository mit meinem PC synchronisieren kann.<br>
 
 Wichtige Befehl für den Git-Client:<br>
@@ -86,19 +86,19 @@ Vagrant ist dazu da um einfach automatisch VM zu installieren. Da wir ich die VM
 
 
 
-<p>Stand 02.09.2020</p>
+<p>Stand 02.09.2020</p><br>
 Heute habe ich viel Neues über den Fileshare Dienst samba gelernt. Ich habe erfolreich ein share erstellt und diesen per Vagrant automatisiert. <br>
 Wichtige Befehle zu Samba:<br>
-- sudo apt-get -y install samba-common samba, sudo apt-get -y install tdb-tools (installiert den Dienst und die Benutzerdatenbank von samba)<br>
-- sudo echo "xxx" >> /etc/samba/smb.conf (Konfigurationsfile anpassen, zum erstellen des Shares/Freigaben)<br>
-- sudo mkdir /home/sambashare (Ordner erstellen)<br>
-- sudo service smbd restart (Samba Service neustarten)<br>
-- sudo ufw allow samba (Firewall freischaltung für den Service Samba)<br>
+- `sudo apt-get -y install samba-common samba, sudo apt-get -y install tdb-tools` (installiert den Dienst und die Benutzerdatenbank von samba)<br>
+- `sudo echo "xxx" >> /etc/samba/smb.conf` (Konfigurationsfile anpassen, zum erstellen des Shares/Freigaben)<br>
+- `sudo mkdir /home/sambashare` (Ordner erstellen)<br>
+- `sudo service smbd restart` (Samba Service neustarten)<br>
+- `sudo ufw allow samba` (Firewall freischaltung für den Service Samba)<br>
 
 Auch habe ich heute den Synchronistations Service gebraucht. <br>
 Wichtige Befehle zu rsync:<br>
-- sudo rsync -a /home/sambashare /srv04_lx_fileserver (rysnc [Option] [Daten] [Ziel], angeben des Backupziels und den zu sicherenden Daten)<br>
-- 	sudo apt-get -y install rsync (Dienst installieren) <br>
+- `sudo rsync -a /home/sambashare /srv04_lx_fileserver` (rysnc [Option] [Daten] [Ziel], angeben des Backupziels und den zu sicherenden Daten)<br>
+- 	`sudo apt-get -y install rsync` (Dienst installieren) <br>
 <br>
 <h2>Jason:</h2>
 <br>
