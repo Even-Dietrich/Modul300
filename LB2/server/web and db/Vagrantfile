@@ -1,10 +1,9 @@
 #To do
+#sudo nano /var/www/html/wp-config.php
 #srv01: Konfigfile wird nicht richtig eingelesen
 #srv02 man im mysql dort bei bind-adress 0.0.0.0
 #sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-
 Vagrant.configure("2") do |config|
-
 	#Erster Server, Webserver
 	config.vm.define "srv01_lx_webserver" do |subconfig|
 		subconfig.vm.provider "virtualbox" do |vb|
@@ -17,6 +16,9 @@ Vagrant.configure("2") do |config|
 		subconfig.vm.hostname = "srv01-lx-webserver"
 		subconfig.vm.network :private_network, ip: "10.0.0.10"
 		subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+
+		#Konfigfile für Wordpress, ist im selben dir wie das Vagrantfile
+		config.vm.provision "file", source: "./config/wp-config.php", destination: "/home/vagrant/"
 
 		#Shell für den Webserver 
 		subconfig.vm.provision "shell", inline: <<-SHELL
@@ -40,31 +42,10 @@ Vagrant.configure("2") do |config|
 			sudo chmod -R 755 /var/www/html/
 			sudo mv wp-config-sample.php wp-config.php
 
-			#Wordpress konfigurieren
-			sudo nano > /var/www/html/wp-config.php
-			sudo su
-			echo '<?php' >> /var/www/html/wp-config.php
-			echo 'define(‘DB_NAME’, ‘wordpress’);' >> /var/www/html/wp-config.php
-			echo 'define(‘DB_USER’, ‘webadmin1’);' >> /var/www/html/wp-config.php
-			echo 'define(‘DB_PASSWORD’, ‘1234’);' >> /var/www/html/wp-config.php
-			echo "define(‘DB_HOST’, ‘10.0.0.11:3306’);" >> /var/www/html/wp-config.php
-			echo "define(‘DB_CHARSET’, ‘utf8′);" >> /var/www/html/wp-config.php
-			echo "define(‘DB_COLLATE’, ”);" >> /var/www/html/wp-config.php
-			echo "define(‘AUTH_KEY’,         ‘put your unique phrase here’);" >> /var/www/html/wp-config.php
-			echo "define(‘SECURE_AUTH_KEY’,  ‘put your unique phrase here’);" >> /var/www/html/wp-config.php
-			echo "define(‘LOGGED_IN_KEY’,    ‘put your unique phrase here’);" >> /var/www/html/wp-config.php
-			echo "define(‘NONCE_KEY’,        ‘put your unique phrase here’);" >> /var/www/html/wp-config.php
-			echo "define(‘AUTH_SALT’,        ‘put your unique phrase here’);" >> /var/www/html/wp-config.php
-			echo "define(‘SECURE_AUTH_SALT’, ‘put your unique phrase here’);" >> /var/www/html/wp-config.php
-			echo "define(‘LOGGED_IN_SALT’,   ‘put your unique phrase here’);" >> /var/www/html/wp-config.php
-			echo "define(‘NONCE_SALT’,       ‘put your unique phrase here’);" >> /var/www/html/wp-config.php
-			echo "$table_prefix  = ‘wp_’;" >> /var/www/html/wp-config.php
-			echo "define(‘WPLANG’, ”);" >> /var/www/html/wp-config.php
-			echo "define(‘WP_DEBUG’, false);" >> /var/www/html/wp-config.php
-			echo "if ( !defined(‘ABSPATH’) )" >> /var/www/html/wp-config.php
-			echo "define(‘ABSPATH’, dirname(__FILE__) . ‘/’);" >> /var/www/html/wp-config.php
-			echo "require_once(ABSPATH . ‘wp-settings.php’);" >> /var/www/html/wp-config.php
-			echo "?>" >> /var/www/html/wp-config.php
+			#Wordpress konfigurieren 
+			cd /home/vagrant
+			sudo cp -f wp-config.php /var/www/html/
+			
 			
 #Ende des Konfigfiles
 			#Wordpress ist jetzt unter localhost:8080/wordpress erreichbar
@@ -84,6 +65,7 @@ Vagrant.configure("2") do |config|
 		subconfig.vm.hostname = "srv02-lx-databaseserver"
 		subconfig.vm.network :private_network, ip: "10.0.0.11"
 
+		config.vm.provision "file", source: "./config/wp-config.php", destination: "/home/vagrant/"
 		#Shell srv02
 		subconfig.vm.provision "shell", inline: <<-SHELL
 			set -o xtrace
@@ -97,7 +79,6 @@ Vagrant.configure("2") do |config|
 
 			#UFW Konfigurieren
 			sudo ufw enable
-			#sudo ufw allow mysql
 			sudo ufw allow from 10.0.0.10 to any port 3306 #Remote Server darf auf Mysql zugreiffen
 			sudo systemctl start mysql
 
