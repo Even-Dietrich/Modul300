@@ -131,8 +131,8 @@ Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. 
 
 ```Ruby
     #Grundkonfiguration der VM
-    config.vm.define "srv05-lx-proxy" do |subconfig|
-        subconfig.vm.provider "virtualbox" do |vb|
+    config.vm.define "srv05-lx-proxy" do |subconfig|    #Name für Vagrant
+        subconfig.vm.provider "virtualbox" do |vb|      #Gibt an welche VM Plattform benutz werden soll
             vb.name = "srv05-lx-proxy"
             vb.memory = "512"
         end
