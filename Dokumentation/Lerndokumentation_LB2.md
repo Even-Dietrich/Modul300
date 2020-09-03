@@ -147,25 +147,25 @@ Mit Vagrant kann man der VM mitgeben was Sie beim aufsetzen installieren soll. I
 <br>
 
 ```Ruby
-  #Shell für den Proxy Server
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update
-    #Installation apache
-    sudo apt-get -y install apache2 libxml2-dev
-    #Reverse Proxy
-    sudo a2enmod proxy
-	sudo a2enmod proxy_html
-	sudo a2enmod proxy_http
-    #kopieren und verlinken der reverse proxy config datei
-    sudo cp /vagrant/001-reverseproxy.conf /etc/apache2/sites-available/
-    sudo ln -s /etc/apache2/sites-available/001-reverseproxy.conf /etc/apache2/sites-enabled/
-    #Neustart der Dienste
-    sudo service apache2 restart
-    #Firewall regeln erstellen und Firewall aktivieren
-    sudo ufw allow 80/tcp
-    sudo ufw allow 22/tcp
-    sudo ufw -f enable
+    #Shell für den Proxy Server
+    config.vm.provision "shell", inline: <<-SHELL
+        sudo apt-get update
+        #Installation apache
+        sudo apt-get -y install apache2 libxml2-dev
+        #Reverse Proxy
+        sudo a2enmod proxy
+	    sudo a2enmod proxy_html
+	    sudo a2enmod proxy_http
+        #kopieren und verlinken der reverse proxy config datei
+        sudo cp /vagrant/001-reverseproxy.conf /etc/apache2/sites-available/
+        sudo ln -s /etc/apache2/sites-available/001-reverseproxy.conf /etc/apache2/sites-enabled/
+        #Neustart der Dienste
+        sudo service apache2 restart
+        #Firewall regeln erstellen und Firewall aktivieren
+        sudo ufw allow 80/tcp
+        sudo ufw allow 22/tcp
+        sudo ufw -f enable
 
-   SHELL
-  end
+        SHELL
+    end
 ```
