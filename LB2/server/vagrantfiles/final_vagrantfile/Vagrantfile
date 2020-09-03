@@ -1,0 +1,108 @@
+################################################################
+## Autor: Jason Bräker
+## Version 5.0
+################################################################
+
+Vagrant.configure("2") do |config|
+  
+  #Reverse Proxy Server
+  #Grundkonfiguration der VM
+  config.vm.define "srv05-lx-proxy" do |subconfig|
+    subconfig.vm.provider "virtualbox" do |vb|
+      vb.name = "srv05-lx-proxy"
+      vb.memory = "512"
+    end
+
+  subconfig.vm.box = "ubuntu/xenial64"
+	subconfig.vm.hostname = "srv05-lx-proxy"
+	subconfig.vm.network :private_network, ip: "10.0.0.14"
+	subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+  
+  #Shell für den Proxy Server
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update
+    #Installation apache
+    sudo apt-get -y install apache2 libxml2-dev
+    #Reverse Proxy
+    sudo a2enmod proxy
+	sudo a2enmod proxy_html
+	sudo a2enmod proxy_http
+    #kopieren und verlinken der reverse proxy config datei
+    sudo cp /vagrant/001-reverseproxy.conf /etc/apache2/sites-available/
+    sudo ln -s /etc/apache2/sites-available/001-reverseproxy.conf /etc/apache2/sites-enabled/
+    #Neustart der Dienste
+    sudo service apache2 restart
+    #Firewall regeln erstellen und Firewall aktivieren
+    sudo ufw allow 80/tcp
+    sudo ufw allow 22/tcp
+    sudo ufw -f enable
+
+   SHELL
+  end
+  
+  #Fileserver
+	#Grundkonfigurationen für die VM
+	config.vm.define "srv03-lx-fileserver" do |subconfig|
+		subconfig.vm.provider "virtualbox" do |vb|
+			vb.name = "srv03-lx-fileserver"
+			vb.memory = "512"
+	  end
+
+	subconfig.vm.box = "ubuntu/trusty64"
+ 	subconfig.vm.hostname = "srv03-lx-fileserver"
+	subconfig.vm.network :private_network, ip: "10.0.0.12"
+	
+	#Shell für den Fileserver 
+	subconfig.vm.provision "shell", inline: <<-SHELL
+	#Diverse Services installieren
+		set -o xtrace
+		sudo apt-get update
+        sudo apt-get -y install samba-common samba 
+		sudo apt-get -y install tdb-tools 
+	#Service Konfigurieren SAMBA 
+		sudo su
+	#smb.conf anpassen 
+		sudo echo " server min protocol = SMB2_02 
+		server max protocol = SMB3" >> /etc/samba/smb.conf
+		sudo echo "guest ok = yes" >> /etc/samba/smb.conf
+		sudo echo "usershare allow guests = yes" >> /etc/samba/smb.conf
+		sudo echo "map to guest = bad user" >> /etc/samba/smb.conf
+		sudo echo "guest account = nobody" >> /etc/samba/smb.conf
+		sudo echo "writeable = yes" >> /etc/samba/smb.conf
+		sudo echo "comment= Samaba 
+		path= /home/sambashare
+		read only = no 
+		browsable = yes" >> /etc/samba/smb.conf
+	#Share Folder erstellen 
+		sudo mkdir /home/sambashare
+	#Service Neustarten
+		sudo service smbd restart			
+	#Firewallrule aktualisieren
+        sudo ufw allow samba
+	#Backup Installieren
+		sudo apt-get update
+		sudo apt-get -y install rsync 
+		#Backup einrichten Ziel zum Backup Server 
+		sudo rsync -a /home/sambashare /srv04_lx_fileserver
+        SHELL
+	end
+	
+	#Zweiter Server, Backupserver
+		config.vm.define "srv04-lx-fileserver" do |subconfig|
+		subconfig.vm.provider "virtualbox" do |vb|
+			vb.name = "srv04-lx-fileserver"
+			vb.memory = "512"
+		end
+
+		subconfig.vm.box = "ubuntu/trusty64"
+		subconfig.vm.hostname = "srv04-lx-fileserver"
+		subconfig.vm.network :private_network, ip: "10.0.0.13"
+
+	#Shell srv04
+		subconfig.vm.provision "shell", inline: <<-SHELL
+			#Creat Folder for Backup from Fileserver
+			sudo mkdir /home/backup
+		
+		SHELL
+	end
+end
