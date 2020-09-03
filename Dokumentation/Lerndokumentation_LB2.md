@@ -13,7 +13,6 @@
 - Markdowneditor wurde ausgewählt (Visual Studio Code)
 - Markdwon ist Strukturiert
 - Persönlicher Wissenstand wird dokummentiert und festgehalten
-
 <br>
 
 ## K3
@@ -26,7 +25,6 @@
 VM können mit Vagrantfile erfolreich erstellt werden. 
 - Projekt mit Git und Mark Down dokumentiert
 - Ein Git-Client wird verwendet   
-   
 <br>
 
 ## K4 Sicherheitsaspekte sind implementiert
@@ -37,7 +35,6 @@ VM können mit Vagrantfile erfolreich erstellt werden.
 - Zugang mit SSH-Tunnel abgesichert
 - Sicherheitsmassnahmen sind dokumentiert
 - Projekt mit Git und Mark Down dokumentiert
-
 <br>
 <br>
 
@@ -54,11 +51,11 @@ VM können mit Vagrantfile erfolreich erstellt werden.
 
 Wir haben uns dazu entschieden eine Umgebung mit insgesamt 5 Servern:
 
-- Reverse Proxy (srv05_lx_proxy)
-- Fileserver (srv03_lx_fileserver)
-- Backupserver (srv04_lx_fileserver)
-- Webserver (srv01_lx_webserver)
-- Datenbankserver (srv02_lx_databaseserver)
+- Reverse Proxy (srv05-lx-proxy)
+- Fileserver (srv03-lx-fileserver)
+- Backupserver (srv04-lx_-fileserver)
+- Webserver (srv01-lx-webserver)
+- Datenbankserver (srv02-lx-databaseserver)
 
 Siehe auch Netzwerkplan.
 
@@ -77,6 +74,7 @@ Die Hardware wird ebenfalls durch das Vagrantfile konfiguriert (Beispiel: Proxys
 ```
 
 ## Netzwerkplan
+
 Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantfile erstellen können.<br>
 
 ![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/tree/master/Dokumentation/img/Netzwerkplan.jpg "Netzwerkplan")
