@@ -128,7 +128,6 @@ und Firewall einstellungen als VM erstellt. Ausserdem habe ich gelernt wie man e
 
 Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. Der Folgende Code ist die Grundkonfiguration einer VM:</p><br>
 
-
 ```Ruby
     #Grundkonfiguration der VM
     config.vm.define "srv05-lx-proxy" do |subconfig|
