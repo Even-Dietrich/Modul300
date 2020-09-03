@@ -132,8 +132,8 @@ Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. 
 ```Ruby
     #Grundkonfiguration der VM
     config.vm.define "srv05-lx-proxy" do |subconfig|    #Name für Vagrant
-        subconfig.vm.provider "virtualbox" do |vb|      
-            vb.name = "srv05-lx-proxy"  #
+        subconfig.vm.provider "virtualbox" do |vb|    #Provider der VM Engine  
+            vb.name = "srv05-lx-proxy"
             vb.memory = "512"   #Arbeitsspeicher
         end
 
@@ -141,4 +141,30 @@ Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. 
 	subconfig.vm.hostname = "srv05-lx-proxy"    #Hostname
 	subconfig.vm.network :private_network, ip: "10.0.0.14"  #IP-Konfiguration
 	subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true  #Port weiterleitung
+```
+Mit Vagrant kann man der VM mitgeben was Sie beim aufsetzen installieren soll. In diesem Fall wird hier apache2 installiert, proxy Funktionen aktiviert, konfigurations-Files importiert und Firewall einstellungen vorgenommen.
+<br>
+
+```Ruby
+  #Shell für den Proxy Server
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update
+    #Installation apache
+    sudo apt-get -y install apache2 libxml2-dev
+    #Reverse Proxy
+    sudo a2enmod proxy
+	sudo a2enmod proxy_html
+	sudo a2enmod proxy_http
+    #kopieren und verlinken der reverse proxy config datei
+    sudo cp /vagrant/001-reverseproxy.conf /etc/apache2/sites-available/
+    sudo ln -s /etc/apache2/sites-available/001-reverseproxy.conf /etc/apache2/sites-enabled/
+    #Neustart der Dienste
+    sudo service apache2 restart
+    #Firewall regeln erstellen und Firewall aktivieren
+    sudo ufw allow 80/tcp
+    sudo ufw allow 22/tcp
+    sudo ufw -f enable
+
+   SHELL
+  end
 ```
