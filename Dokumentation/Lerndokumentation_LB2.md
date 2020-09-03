@@ -1,55 +1,55 @@
-<h1>LB2</h1>
+# Allgemeine Bewertungskriterien
 <br>
 
-<p>K1 Umgebung wurde auf dem Notebook/VM in der TBZ cloud eingerichtet</p><br>
-<p>K2 Unsere Lernumgebung einrichten</b>
+### K1 Umgebung wurde auf dem Notebook/VM in der TBZ cloud eingerichtet
+<br>
 
-<ul>
-    <li>Ein Git-Client wird verwendet</li>
-    <li>Dokumentation ist als Markdown vorhanden</li>
-    <li>Markdowneditor wurde ausgewählt (Visual Studio Code)</li>
-    <li>Markdwon ist Strukturiert</li>
-    <li>Persönlicher Wissenstand wird dokummentiert und festgehalten</li>   
-</ul>
-</p>
+### K2 Unsere Lernumgebung einrichten
+
+- Ein Git-Client wird verwendet
+- Dokumentation ist als Markdown vorhanden
+- Markdowneditor wurde ausgewählt (Visual Studio Code)
+- Markdwon ist Strukturiert
+- Persönlicher Wissenstand wird dokummentiert und festgehalten
+
 <br>
-<p>K3
-    <ul>
-       <li>Bestehende vm aus Vagrant-Cloud einrichten</li>
-	   Alle Vagrantfiles im Verzeichnis Modul300/LB2/server<br>
-       <li>Kennt die Vagrant-Befehle</li>   
-       <li>Eingerichtete Umgebung ist dokumentiert (Umgebungs-Variablen, Netzwerkplan gezeichnet, Sicherheitsaspekte)</li>
-       <li>Funktionsweise getestet inkl. Dokumentation der Testfälle- andere, vorgefertigte vm auf eigenem Notebook aufgesetzt</li>
-	    VM können mit Vagrantfile erfolreich erstellt werden. <br>
-       <li>Projekt mit Git und Mark Down dokumentiert</li>
-       <li>Ein Git-Client wird verwendet</li>
-       <li>Ein Git-Client wird verwendet</li>
-    </ul>
-</p>
+
+### K3
+    
+- Bestehende vm aus Vagrant-Cloud einrichten
+  - Alle Vagrantfiles im Verzeichnis Modul300/LB2/server
+- Kennt die Vagrant-Befehle  
+- Eingerichtete Umgebung ist dokumentiert (Umgebungs-Variablen, Netzwerkplan    gezeichnet, Sicherheitsaspekte)
+- Funktionsweise getestet inkl. Dokumentation der Testfälle- andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
+VM können mit Vagrantfile erfolreich erstellt werden. 
+- Projekt mit Git und Mark Down dokumentiert
+- Ein Git-Client wird verwendet   
+   
 <br>
-<p>K4 Sicherheitsaspekte sind implementiert</b>
-<ul>
-   <li>Firewall eingerichtet inkl. Rules</li>
-   <li>Reverse-Proxy eingerichtet</li>
-   <li>Benutzer- und Rechtevergabe ist eingerichtet</li>
-   <li>Zugang mit SSH-Tunnel abgesichert</li>
-   <li>Sicherheitsmassnahmen sind dokumentiert</li>  
-   <li>Projekt mit Git und Mark Down dokumentiert</li>  
-</ul>
-</p>
+
+### K4 Sicherheitsaspekte sind implementiert
+
+- Firewall eingerichtet inkl. Rules
+- Reverse-Proxy eingerichtet
+- Benutzer- und Rechtevergabe ist eingerichtet
+- Zugang mit SSH-Tunnel abgesichert
+- Sicherheitsmassnahmen sind dokumentiert
+- Projekt mit Git und Mark Down dokumentiert
 
 <br>
 <br>
 
-<h1>Netzwerkplan</h1>
+# LB2
+
+## Netzwerkplan
 Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfile erstellen können.<br>
 
-<img src=Dokumentation/img/Netzwerkplan.jpg>
+![alt text](https://github.com/Even-Dietrich/Modul300/tree/master/Dokumentation/img/Netzwerkplan.jpg "Netzwerkplan")
 
-<h1>Persönlicher Wissenstand:</h1>
-
+# Persönlicher Wissenstand:
 <br>
-<h2>Adam:</h2>
+
+## Adam:
 <br>
 Stand vor Kursbeginn<br>
 Ich habe vor dem Beginn des Kurses noch keine ahnung von GitHub und das Erstemal im Modul 300 damit gearbeitet. Ich kannte jedoch GitLab von meinem Geschäft, konnte aber bis jetzt noch nie damit in Kontakt gekommen.<br>
