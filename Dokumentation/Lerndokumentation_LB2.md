@@ -51,7 +51,7 @@ Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfi
 <br>
 <h2>Adam:</h2>
 <br>
-<p>Stand vor Kursbeginn<br>
+<p>Stand vor Kursbeginn</p><br>
 Ich habe vor dem Beginn des Kurses noch keine ahnung von GitHub und das Erstemal im Modul 300 damit gearbeitet. Ich kannte jedoch GitLab von meinem Geschäft, konnte aber bis jetzt noch nie damit in Kontakt gekommen.<br>
 
 <p>Stand 19.08.2020<br>
@@ -63,7 +63,7 @@ Ich habe heute von Zuhause aus gearbeitet weil es mir nicht sehr wohl war. Ich k
 
 <h2>Alex:</h2>
 
-<p>Stand 19.08.2020<br>
+<p>Stand 19.08.2020
 Heute habe ich gelernt, wie man ein Github Repository mit meinem PC synchronisieren kann.<br>
 
 Wichtige Befehl für den Git-Client:<br>
