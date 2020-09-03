@@ -47,7 +47,6 @@ Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfi
 <img src=Dokumentation/img/Netzwerkplan.jpg>
 
 <h1>Persönlicher Wissenstand:</h1>
-***
 
 <br>
 <h2>Adam:</h2>
@@ -107,9 +106,9 @@ Wichtige Befehle zu rsync:<br>
 Ich habe gelernt wie man mit GitHub umgeht und ein Repository erstellt und synchonisieren kann.<br>
  
 Für den Git-Client gibt es diverse wichtige Befehle:<br>
-- git add -A (Änderungen registrieren/erkennen)<br>
-- git commit -m "Kommentar" (Änderungen werden auf dem lokalen Gerät gespeichert)<br>
-- git push (Änderungen werden auf GitHub geladen)
+- `git add -A` (Änderungen registrieren/erkennen)<br>
+- `git commit -m "Kommentar"` (Änderungen werden auf dem lokalen Gerät gespeichert)<br>
+- `git push` (Änderungen werden auf GitHub geladen)
 
 Ausserdem habe ich VirtualBox und Vagrant kennengelernt. Durch die Anleitungen auf GitHub konnte ich die Aufgaben ziemlich einfach durcharbeiten und die Plattformen kennenlernen.<br>
 
@@ -119,10 +118,10 @@ Mit Vagrant kann man VMs ganz einfach und schnell automatisch erstellen und inst
 eingetragen werden. Danach kann man im Terminal/Bash vagrant aufrufen<br>
 
 Wichtige Befehle für Vagrant:<br>
-- vagrant init ubuntu/xenial64 (init erstellt ein leeres vagrantfile, in diesem Beispiel wird eines mit ubuntu erstellt )<br>
-- vagrant up (erzeugt und konfiguriert die VM anhand des vagrantfiles)<br>
-- vagrant ssh (verbindet per ssh mit VM)<br>
-- vagrant halt (beendet die VM)<br>
+- `vagrant init ubuntu/xenial64` (init erstellt ein leeres vagrantfile, in diesem Beispiel wird eines mit ubuntu erstellt )<br>
+- `vagrant up` (erzeugt und konfiguriert die VM anhand des vagrantfiles)<br>
+- `vagrant ssh` (verbindet per ssh mit VM)<br>
+- `vagrant halt` (beendet die VM)<br>
 <br>
 <p>Stand 02.09.2020<br>
 Ich habe heute den Kapitel 25 Sicherheit durchgearbeitet. Ich habe dabei vagrant näher kennengelernt und gelernt wie man mit einem Vagrantfile einen Server mit ReverseProxy<br>
