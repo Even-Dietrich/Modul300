@@ -43,6 +43,17 @@ VM können mit Vagrantfile erfolreich erstellt werden.
 
 # LB2
 
+## Software
+
+- Visual Studio Code
+- BashGit
+- Oracle VM VirtualBox
+- Vagrant
+
+## Unsere Lösung:
+
+
+
 ## Netzwerkplan
 Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantsfile erstellen können.<br>
 
