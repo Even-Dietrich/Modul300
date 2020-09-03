@@ -120,7 +120,6 @@ Folgende Firewall Regeln sind konfiguriert:
     sudo ufw -f enable
 ```
 <br>
-<br>
 
 # Persönlicher Wissenstand:
 
