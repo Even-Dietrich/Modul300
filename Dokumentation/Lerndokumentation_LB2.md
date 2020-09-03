@@ -79,9 +79,9 @@ Ich habe heute von Zuhause aus gearbeitet weil es mir nicht sehr wohl war. Ich k
 Heute habe ich gelernt, wie man ein Github Repository mit meinem PC synchronisieren kann.<br>
 
 Wichtige Befehl für den Git-Client:<br>
-git add -A änderungen werden erkennt<br>
-git commit -m "Kommentar" Die Änderungen werden auf dem Gerät gespeichert (lokal)<br>
-git push Die Änderungen werden auf GitHub geladen.<br>
+- `git add -A` änderungen werden erkennt<br>
+- `git commit -m "Kommentar"` Die Änderungen werden auf dem Gerät gespeichert (lokal)<br>
+- `git push` Die Änderungen werden auf GitHub geladen.<br>
 
 Desweiteren habe ich Vagrant kennen gerlernt. Damit kann man Konfigurationsdateien erstellen für VM, damit man nicht immer die VM manuell aufsetzten muss.
 
@@ -95,7 +95,6 @@ Eigentlich hatte ich kein richtig grossen Vorwissen zum Beginn dieses Kurses. Ic
 #### Stand 19.08.2020
 Heute habe ich die zwei Tools Github und Vagrant kennengelernt. Bei Github konnte ich erfolgreich ein Repository erstellen und dieses per ssh mit dem Bash Terminal verküpfen. 
 Vagrant ist dazu da um einfach automatisch VM zu installieren. Da wir ich die VM nutze war schon alles installiert und ich musste mich nur noch in die Anleitung reinslesen. Per Bash Terminal können wir nun darauf zugreigen und damit arbeiten<br>
-
 
 
 #### Stand 02.09.2020
