@@ -1,9 +1,7 @@
 <h1>LB2</h1>
 <br>
 
-<h2>Software:</h2>
-
-<p>K1 Umgebung wurde auf dem Notebook/VM in der TBZ cloud eingerichtet<br>
+<p>K1 Umgebung wurde auf dem Notebook/VM in der TBZ cloud eingerichtet</p><br>
 <p>K2 Unsere Lernumgebung einrichten</b>
 
 <ul>
@@ -127,3 +125,20 @@ Wichtige Befehle für Vagrant:<br>
 <p>Stand 02.09.2020<br>
 Ich habe heute den Kapitel 25 Sicherheit durchgearbeitet. Ich habe dabei vagrant näher kennengelernt und gelernt wie man mit einem Vagrantfile einen Server mit ReverseProxy<br>
 und Firewall einstellungen als VM erstellt. Ausserdem habe ich gelernt wie man ein vagrantfile richtig konfigueriert und damit eine VM erstellt.<br>
+
+<p>Ich habe heute ein Vagrantfile erstellt um einen Reverse Proxy zu installieren. </p>
+
+```Ruby
+    #Grundkonfiguration der VM
+    config.vm.define "srv05-lx-proxy" do |subconfig|
+        subconfig.vm.provider "virtualbox" do |vb|
+            vb.name = "srv05-lx-proxy"
+            vb.memory = "512"
+        end
+
+    subconfig.vm.box = "ubuntu/xenial64"
+	subconfig.vm.hostname = "srv05-lx-proxy"
+	subconfig.vm.network :private_network, ip: "10.0.0.10"
+	subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+    subconfig.vm.network :private_network, ip: "10.0.0.14"
+```
