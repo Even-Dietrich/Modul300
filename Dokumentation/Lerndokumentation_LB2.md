@@ -136,6 +136,8 @@ Ich habe heute von Zuhause aus gearbeitet weil es mir nicht sehr wohl war. Ich k
 
 
 ## Alex:
+### Stand vor dem Kurs<br>
+Da ich bei der Arbeit zum Teil mit Linux/Unix befehle zu tun habe sind mir die geläufigsten Befehle bekannt. Aber sonst habe ich nicht viel mit VMs zu tun oder mit konfigurationen über die Shell zu tun
 
 #### Stand 19.08.2020
 Heute habe ich gelernt, wie man ein Github Repository mit meinem PC synchronisieren kann.<br>
@@ -147,8 +149,28 @@ Wichtige Befehl für den Git-Client:<br>
 
 Desweiteren habe ich Vagrant kennen gerlernt. Damit kann man Konfigurationsdateien erstellen für VM, damit man nicht immer die VM manuell aufsetzten muss.
 
+### Stand 02.09.2020
+Heute habe ich mehr über wie man Konfigurationseinstellung über die Shell macht und wie man das im Vagrant automatisch machen kann mit dem Befehl echo und mit der Abgabe vom Pfad der Konfigurationsdatei bzw. wenn keine Vorhanden ist muss man diese zuerst neu erstellen.
+Dies kann man einfach via einen Texteditor Bsp: sudo nano /pfad/zur/datei/dateiname.conf
 
-<br>
+Bsp zum in der Konfigurationsdatei etwas am Schluss anschliessen zu können:
+- `sudo su` //Als Root ausführen
+- `sudo echo "set" >> /pfad/zur/datei/dateiname.conf`
+echo wiedergibt String, welcher man definiert hat. Die Zwei >> geben an dass der vorherigen String ganz unten bei der Textdatei anfügen soll. Alles nachden beiden Einfügoperatoren ist der Pfad.
+
+Bsp um in einer Konfiguration alles zu Überschreiben
+- `sudo su` //Als Root ausführen
+- `sudo echo "String"  > /pfad/zur/datei/dateiname.conf` 
+echo wiedergibt String, welcher man definiert hat. Der einte > gibt dass das ganze File überschrieben wird und dannach ist nur noch der voherigen String vorhanden. Alles nachdem Einfügoperatoren ist der Pfad.<br>
+
+Wichtige Befehle und Konfigurationsdatein für Mysql und Wordpress:
+
+MySql:
+- /etc/mysql/mysql.conf.d/mysqld.conf: Dort kann man eine IP-Festlegen, welche auf den Server remote zugriff hat oder alternativ 0.0.0.0 dann kann jede andere IP auch auf den Mysql Server zugreiffen.
+- mysql -uBenutzername -pPasswort -e "Mysql Befehle"
+
+Wordpress
+- /var/www/html/wp-config.cnf: Dort werden die Hauptkonfigurationen von Wordpress gespeichert aber dieses File muss vor der Installation  erstellt werden, sonst muss man die WP-Konfiguration übers GUI machen mit dem Browser.
 
 ## Even:
 
