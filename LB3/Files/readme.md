@@ -1,0 +1,1 @@
+## In diesem Verzeichniss finden Sie alle Files zur LB3
