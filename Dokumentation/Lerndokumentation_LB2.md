@@ -119,6 +119,17 @@ Folgende Firewall Regeln sind konfiguriert:
     sudo ufw allow 80/tcp
     sudo ufw -f enable
 ```
+
+## Netzwerk
+
+Auf allen VMs ist das Private Netzwerk 10.0.0.0/24 konfiguriert. Alle VMs erhalten demnach eine fixe IP-Adresse.
+
+```Shell
+    subconfig.vm.network :private_network, ip: "10.0.0.14"
+	subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+
+```
+
 <br>
 
 # Persönlicher Wissenstand:
