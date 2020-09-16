@@ -1,14 +1,14 @@
 ### Modul300 Dokumentation für die LB3
 
 ## Inhaltsverzeichnis
-1 [Allgemeine Bewertungskriterien](#Allgemein)
-  1.1 [K1: Titel](#K1)
-  1.2 [K2: Titel](#K2)
-  1.3 [K3: Titel](#K3)
-  1.4 [K4: Titel](#K4)
-  1.5 [K5: Titel](#K5)
-  1.6 [K4: Titel](#K6)
-2 [Unsere Idee](#Idee)
+1 [Allgemeine Bewertungskriterien](#Allgemein)<br>
+  1.1 [K1: Titel](#K1)<br>
+  1.2 [K2: Titel](#K2)<br>
+  1.3 [K3: Titel](#K3)<br>
+  1.4 [K4: Titel](#K4)<br>
+  1.5 [K5: Titel](#K5)<br>
+  1.6 [K4: Titel](#K6)<br>
+2 [Unsere Idee](#Idee)<br>
 
 ## Allgemeine Bewetungskriterien <a name="Allgemein"></a>
 
