@@ -49,8 +49,7 @@ Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir a
   - Jason, Minecraft Server
   - Adam, Apache/Webserver
   - Fileserver je nach auslastung
-  
-  
+
 ## Software <a name="Software"></a>
 
 Um unsere Lösung testen zu können brauchen wir folgende Software:
@@ -60,20 +59,36 @@ Um unsere Lösung testen zu können brauchen wir folgende Software:
 - TS3 Client
 - Minecraft Client
 
+## Unsere Lösung
+
+
 ## Netzwerkplan
 
 ## Skript
+
+## Wichtige Dockerbefehle <a name="Befehle"></a><br>
+
+## Testprotokolle <a name="Testprotokolle"></a><br>
+
+### Testprotokoll für den Minecraftserver <a name="MC-Test"></a><br>
+| Test  |   |   |   |   |
+|-------|---|---|---|---|
+|       |   |   |   |   |
+|       |   |   |   |   |
+|       |   |   |   |   |
   
-  ## Persönlicher Wissenstand und Reflexion:
+  ## Persönlicher Wissenstand und Reflexion:<a name="Wissenstand"</a><br>
   
-  ## Adam:
+  ### Adam:<a name="Adam"</a><br>
   -
   
-  ## Alex:
+  ### Alex:<a name="Alex"</a><br>
+  
+  
+  
+  
+  ### Even:<a name="Even"></a><br>
   -
   
-  ## Even:
-  -
-  
-  ## Jason:
+  ### Jason:<a name="Jason"></a><br>
   -
