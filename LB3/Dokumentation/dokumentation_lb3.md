@@ -92,7 +92,7 @@ Um unsere Lösung testen zu können brauchen wir folgende Software:
 
 
 
-  ## Persönlicher Wissensstand und Reflexion:<a name="Wissensstand"</a><br>
+  ## Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"</a><br>
   
   ### Adam: <a name="Adam"</a><br>
   -
