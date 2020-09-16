@@ -194,6 +194,8 @@ Auch habe ich heute den Synchronistations Service gebraucht. <br>
 Wichtige Befehle zu rsync:<br>
 - `sudo rsync -a /home/sambashare /srv04_lx_fileserver` (rysnc [Option] [Daten] [Ziel], angeben des Backupziels und den zu sicherenden Daten)<br>
 - `sudo apt-get -y install rsync` (Dienst installieren)
+File per Script bearbeiten <br>
+- `sudo echo "Text" >> Pfad zum File`  
 <br>
 
 ## Jason:
