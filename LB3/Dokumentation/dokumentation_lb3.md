@@ -2,12 +2,12 @@
 
 ## Inhaltsverzeichnis:
 1 [Allgemeine Bewertungskriterien](#Allgemein)<br>
-  1.1 [K1: Umgebung auf dem Notebook eingerichtet](#K1)<br>
-  1.2 [K2: Eigene Lernumgebung eingerichtet](#K2)<br>
-  1.3 [K3: Titel](#K3)<br>
-  1.4 [K4: Titel](#K4)<br>
-  1.5 [K5: Titel](#K5)<br>
-  1.6 [K4: Titel](#K6)<br>
+&nbsp;1.1 [K1: Umgebung auf dem Notebook eingerichtet](#K1)<br>
+&nbsp;1.2 [K2: Eigene Lernumgebung eingerichtet](#K2)<br>
+&nbsp;1.3 [K3: Titel](#K3)<br>
+&nbsp;1.4 [K4: Titel](#K4)<br>
+&nbsp;1.5 [K5: Titel](#K5)<br>
+&nbsp;1.6 [K4: Titel](#K6)<br>
 2 [Unsere Idee](#Idee)<br>
 3 [Unsere Arbeitsaufteilung](#Arbeitsaufteilung)<br>
 4 [Verwendete Software](#Software)<br>
@@ -15,6 +15,17 @@
 6 [Netzwerkplan](#Netzwerkplan)<br>
 7 [Skript](#Skript)<br>
 8 [Wichtige Dockerbefehle](#Befehle)<br>
+9 [Testprotokolle](#Testprotokoll)<br>
+&nbsp;[9.1 Minecraftserver Testprotokoll](#MC-Test)<br>
+&nbsp;[9.2 Teamspeakserver Testprotokoll](#TS-Test)<br>
+&nbsp;[9.3 Proxyserver Testprotokoll](#Proxy-Test)<br>
+&nbsp;[9.4 Webserver Testprotokoll](#Web-Test)<br>
+&nbsp;[9.5 Fileserver Testprotokoll](#File-Test)<br>
+10 [Persönlicher Wissensstand und Reflexion](#Wissensstand)<br>
+&nbsp;[10.1 Adam](#Adam)<br>
+&nbsp;[10.2 Alex](#Alex)<br>
+&nbsp;[10.3 Even](#Even)<br>
+&nbsp;[10.4 Jason](#Jason)<br>
 
 
 ## Allgemeine Bewetungskriterien <a name="Allgemein"></a>
@@ -61,20 +72,18 @@ Wir wollen folgende Server aufsetzten und konfigurieren:
 
 Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir an folgenden Servers:
 
-  - Even, Reverse Proxy + SSH-Tunnel
+  - Even, Reverse Proxy mit SSH-Tunnel
   - Alex, Teamspeakserver
   - Jason, Minecraft Server
-  - Adam, Apache/Webserver
+  - Adam, Apache/Webserver mit Installation eines Open Source Forum
   - Fileserver je nach auslastung
 
 ## Software: <a name="Software"></a>
 
-Um unsere Lösung testen zu können brauchen wir folgende Software:
+Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 
-- Visual Studio Code
-- BashGit
-- <a href="https://www.teamspeak.com/en/downloads/">TS3 Client</a>
-- <a href="https://www.minecraft.net/de-de/download">Minecraft Client</a>
+- <a href="https://www.teamspeak.com/en/downloads/">TS3 Client, </a>damit wir auf den Teamspeakserver zugreiffen können
+- <a href="https://www.minecraft.net/de-de/download">Minecraft Client, </a>damit wir auf den Server spielen können
 
 ## Unsere Lösung: <a name="Lösung"></a>
 
@@ -82,7 +91,7 @@ Um unsere Lösung testen zu können brauchen wir folgende Software:
 ## Netzwerkplan: <a name="Netzwerkplan"></a>
 Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
 
-![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/tree/master/LB3/img/Netzwerkplan_nichtfertig.jpg)
+![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/Netzwerkplan_nichtfertig.jpg)
 
 ## Skript: <a name="Skript"></a>
 
@@ -91,24 +100,30 @@ Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
 ## Testprotokolle: <a name="Testprotokolle"></a><br>
 
 ### Testprotokoll für den Minecraftserver: <a name="MC-Test"></a><br>
+-
+### Testprotokoll für den Teamspeakserver: <a name="TS-Test"></a><br>
+-
+### Testprotokoll für den Proxyserver: <a name="Proxy-Test"></a><br>
+-
+### Testprotokoll für den Webserver: <a name="Web-Test"></a><br>
+-
+### Testprotokoll für den Fileserver: <a name="File-Test"></a><br>
+-
 
+## Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
+  
+### Adam: <a name="Adam"></a><br>
+-
+  
+### Alex: <a name="Alex"></a><br>
+Stand 16.09.2020:
 
-
-
-  ## Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
-  
-  ### Adam: <a name="Adam"></a><br>
-  -
-  
-  ### Alex: <a name="Alex"></a><br>
-  Stand 16.09.2020:
-
-  Ich hoffe, dass ich mit der Erfahrung von der LB2 in der LB3 ein komplexeres System aufsetzten kann. Aber ich habe noch nie mit Docker gearbeitet also ist heute das Ziel sich ein bisschen einzuarbeiten.
+Ich hoffe, dass ich mit der Erfahrung von der LB2 in der LB3 ein komplexeres System aufsetzten kann. Aber ich habe noch nie mit Docker gearbeitet also ist heute das Ziel sich ein bisschen einzuarbeiten.
   
   
   
-  ### Even: <a name="Even"></a><br>
-  -
+### Even: <a name="Even"></a><br>
+-
   
-  ### Jason: <a name="Jason"></a><br>
-  -
+### Jason: <a name="Jason"></a><br>
+-
