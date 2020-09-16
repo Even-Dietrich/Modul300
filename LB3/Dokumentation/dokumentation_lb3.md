@@ -1,10 +1,10 @@
 ### Modul300 Dokumentation für die LB3
 
 ## Inhaltsverzeichnis
-[Allgemeine Bewertungskriterien] (#Allgemein)
+1[Allgemeine Bewertungskriterien](#Allgemein)
 
 
-## Allgemeine Bewetungskriterien <a name="Allgemein"></>
+## Allgemeine Bewetungskriterien <a name="Allgemein"></a>
 
 # K1
 -
