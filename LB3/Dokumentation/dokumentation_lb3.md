@@ -96,8 +96,21 @@ Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
 ## Skript: <a name="Skript"></a>
 
 ## Wichtige Dockerbefehle: <a name="Befehle"></a><br>
+| Befehle | Auswirkung | 
+|--------|----------|
+|   docker stop $(docker ps -a -q)     |       Alle laufenden Container stoppen     |
+|   docker rm $(docker ps -a -q)      |        Alle laufenden Container löschen   |
+|        |            |
+|        |            |
+|        |            |
+|        |            |
+|        |            |
+|        |            |
+|        |            |
 
 ## Testprotokolle: <a name="Testprotokolle"></a><br>
+
+In diesem Abschnitt sind alle Testprotokolle festgehalten.
 
 ### Testprotokoll für den Minecraftserver: <a name="MC-Test"></a><br>
 -
@@ -113,17 +126,25 @@ Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
 ## Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
   
 ### Adam: <a name="Adam"></a><br>
--
+
   
 ### Alex: <a name="Alex"></a><br>
 Stand 16.09.2020:
 
 Ich hoffe, dass ich mit der Erfahrung von der LB2 in der LB3 ein komplexeres System aufsetzten kann. Aber ich habe noch nie mit Docker gearbeitet also ist heute das Ziel sich ein bisschen einzuarbeiten.
-  
-  
+
+>Was sind Container?
+
+>Container machen Anwendungen unabhängiger von der Umgebung, in der sie ausgeführt werden. Sie agieren damit ähnlich einer virtuellen Maschine (VM). Während eine VM jedoch ein vollständiges Betriebssystem sowie Applikationen enthält, teilen sich mehrere Container einen Betriebssystemkern. Jede Anwendung erhält lediglich einen neuen User Space und damit eine komplett isolierte Umgebung.
+
+>![Vergleich VM und Container](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/content-grafiken-vm-container.jpg)
+
+>Container verbrauchen also im Vergleich zu VMs deutlich weniger Ressourcen wie
+Rechenleistung, Hauptspeicher und Speicherplatz. Und es dreht sich hier um Megabytes bei Containern im Vergleich zu Gigabytes bei VMs. Daher passen auf einen Server sehr viel mehr Container als virtuelle Maschinen. Zudem sind Container schneller einsatzbereit: Während VMs manchmal mehrere Minuten zum Start benötigen, stehen Anwendungen hier beinahe sofort zur Verfügung.
+>Quelle: <a href=https://www.cloud-mag.com/was-sind-container/#close>cloud-mag.com</a>
   
 ### Even: <a name="Even"></a><br>
--
+
   
 ### Jason: <a name="Jason"></a><br>
--
+
