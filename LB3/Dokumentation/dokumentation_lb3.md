@@ -82,7 +82,7 @@ Um unsere Lösung testen zu können brauchen wir folgende Software:
 ## Netzwerkplan: <a name="Netzwerkplan"></a>
 Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
 
-![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/tree/master/LB3/img/Netzwerkplan.jpg)
+![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/tree/master/LB3/img/Netzwerkplan_nichtfertig.jpg)
 
 ## Skript: <a name="Skript"></a>
 
