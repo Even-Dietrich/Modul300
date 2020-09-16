@@ -78,7 +78,7 @@ Die Hardware wird ebenfalls durch das Vagrantfile konfiguriert (Beispiel: Proxys
 
 Hier zeigen wir Ihnen unsere Umgebung auf die wir automatisch mit den Vagrantfile erstellen können.<br>
 
-![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/tree/master/Dokumentation/img/Netzwerkplan.jpg "Netzwerkplan")
+![Netzwerkplan](/img/Netzwerkplan.jpg)
 
 ## Scripts
 
