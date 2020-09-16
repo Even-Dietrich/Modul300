@@ -1,6 +1,6 @@
-### Modul300 Dokumentation für die LB3
+# Modul300 Dokumentation für die LB3
 
-## Inhaltsverzeichnis
+## Inhaltsverzeichnis:
 1 [Allgemeine Bewertungskriterien](#Allgemein)<br>
   1.1 [K1: Umgebung auf dem Notebook eingerichtet](#K1)<br>
   1.2 [K2: Eigene Lernumgebung eingerichtet](#K2)<br>
@@ -34,20 +34,20 @@
 - Markdown ist strukturiert
 - Persönlicher Wissenstand im Bezug auf die wichtigsten Themen ist dokumentiert (Containerisierung / Docker, Microservices), siehe [Persönlicher Wissensstand](#Wissensstand)
 
-### K3 <a name="K3"></a>
+### K3: <a name="K3"></a>
 -
 
-### K4 <a name="K4"></a>
+### K4: <a name="K4"></a>
 -
 
-### K5 <a name="K5"></a>
+### K5: <a name="K5"></a>
 -
 
-### K6 <a name="K6"></a>
+### K6: <a name="K6"></a>
 -
 
 
-## Unsere Idee <a name="Idee"></a>
+## Unsere Idee: <a name="Idee"></a>
 
 Wir wollen folgende Server aufsetzten und konfigurieren:
 
@@ -57,7 +57,7 @@ Wir wollen folgende Server aufsetzten und konfigurieren:
   - Apache Webserver mit einem Communityforum
   - Fileserver als Backup für die Daten des Minecraftserver
 
-## Arbeitsaufteilung <a name="Arbeitsaufteilung"></a>
+## Arbeitsaufteilung: <a name="Arbeitsaufteilung"></a>
 
 Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir an folgenden Servers:
 
@@ -67,27 +67,30 @@ Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir a
   - Adam, Apache/Webserver
   - Fileserver je nach auslastung
 
-## Software <a name="Software"></a>
+## Software: <a name="Software"></a>
 
 Um unsere Lösung testen zu können brauchen wir folgende Software:
 
 - Visual Studio Code
 - BashGit
-- TS3 Client
-- Minecraft Client
+- <a href="https://www.teamspeak.com/en/downloads/">TS3 Client</a>
+- <a href="https://www.minecraft.net/de-de/download">Minecraft Client</a>
 
-## Unsere Lösung <a name="Lösung"></a>
+## Unsere Lösung: <a name="Lösung"></a>
 
 
-## Netzwerkplan <a name="Netzwerkplan"></a>
+## Netzwerkplan: <a name="Netzwerkplan"></a>
+Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
 
-## Skript <a name="Skript"></a>
+![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/tree/master/LB3/img/Netzwerkplan.jpg)
 
-## Wichtige Dockerbefehle <a name="Befehle"></a><br>
+## Skript: <a name="Skript"></a>
 
-## Testprotokolle <a name="Testprotokolle"></a><br>
+## Wichtige Dockerbefehle: <a name="Befehle"></a><br>
 
-### Testprotokoll für den Minecraftserver <a name="MC-Test"></a><br>
+## Testprotokolle: <a name="Testprotokolle"></a><br>
+
+### Testprotokoll für den Minecraftserver: <a name="MC-Test"></a><br>
 
 
 
@@ -98,7 +101,9 @@ Um unsere Lösung testen zu können brauchen wir folgende Software:
   -
   
   ### Alex: <a name="Alex"></a><br>
-  -
+  Stand 16.09.2020:
+
+  Ich hoffe, dass ich mit der Erfahrung von der LB2 in der LB3 ein komplexeres System aufsetzten kann. Aber ich habe noch nie mit Docker gearbeitet also ist heute das Ziel sich ein bisschen einzuarbeiten.
   
   
   
