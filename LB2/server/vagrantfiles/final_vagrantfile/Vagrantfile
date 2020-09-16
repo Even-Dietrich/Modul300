@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
 		subconfig.vm.provider "virtualbox" do |vb|
 			
 			vb.name = "srv01_lx_webserver"
-			vb.memory = "1024"
+			vb.memory = "512"
 		end
 
 		subconfig.vm.box = "ubuntu/xenial64"
