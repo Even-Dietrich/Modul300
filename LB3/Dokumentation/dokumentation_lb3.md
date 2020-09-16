@@ -1,31 +1,37 @@
 ### Modul300 Dokumentation für die LB3
 
 ## Inhaltsverzeichnis
-1[Allgemeine Bewertungskriterien](#Allgemein)
-
+1 [Allgemeine Bewertungskriterien](#Allgemein)
+  1.1 [K1: Titel](#K1)
+  1.2 [K2: Titel](#K2)
+  1.3 [K3: Titel](#K3)
+  1.4 [K4: Titel](#K4)
+  1.5 [K5: Titel](#K5)
+  1.6 [K4: Titel](#K6)
+2 [Unsere Idee](#Idee)
 
 ## Allgemeine Bewetungskriterien <a name="Allgemein"></a>
 
-# K1
+### K1 <a name="K1"></a>
 -
 
-# K2
+### K2 <a name="K2"></a>
 -
 
-# K3
+### K3 <a name="K3"></a>
 -
 
-# K4
+### K4 <a name="K4"></a>
 -
 
-# K5
+### K5 <a name="K5"></a>
 -
 
-# K6
+### K6 <a name="K6"></a>
 -
 
 
-## Unsere Idee
+## Unsere Idee <a name="Idee"></a>
 
 Wir wollen folgende Server aufsetzten und konfigurieren:
 
@@ -35,7 +41,7 @@ Wir wollen folgende Server aufsetzten und konfigurieren:
   - Apache Webserver mit einem Communityforum
   - Fileserver als Backup für die Daten des Minecraftserver
 
-## Arbeitsaufteilung
+## Arbeitsaufteilung <a name="Arbeitsaufteilung"></a>
 
 Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir an folgenden Servers:
   - Even, Reverse Proxy + SSH-Tunnel
@@ -45,7 +51,7 @@ Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir a
   - Fileserver je nach auslastung
   
   
-## Software
+## Software <a name="Software"></a>
 
 Um unsere Lösung testen zu können brauchen wir folgende Software:
 
@@ -54,7 +60,9 @@ Um unsere Lösung testen zu können brauchen wir folgende Software:
 - TS3 Client
 - Minecraft Client
 
-## 
+## Netzwerkplan
+
+## Skript
   
   ## Persönlicher Wissenstand und Reflexion:
   
