@@ -1,4 +1,4 @@
-### Modul300 Dokumentation
+### Modul300 Dokumentation LB2
 <br>
 
 # Allgemeine Bewertungskriterien
