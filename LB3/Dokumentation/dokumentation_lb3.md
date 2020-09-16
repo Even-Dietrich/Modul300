@@ -71,11 +71,11 @@ Um unsere Lösung testen zu können brauchen wir folgende Software:
 ## Testprotokolle <a name="Testprotokolle"></a><br>
 
 ### Testprotokoll für den Minecraftserver <a name="MC-Test"></a><br>
-| Beschreibung Testgruppe:  |
-|-------|---|---|---|---|
-|A1|   |   |   |   |
-|A2|   |   |   |   |
-|A3|   |   |   |   |
+|Test   |   |   |   |   |
+|--- |---|---|---|---|
+| A1 |   |   |   |   |
+| A2 |   |   |   |   |
+| A3 |   |   |   |   |
   
   ## Persönlicher Wissenstand und Reflexion:<a name="Wissenstand"</a><br>
   
