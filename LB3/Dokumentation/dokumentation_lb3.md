@@ -71,7 +71,7 @@ Um unsere Lösung testen zu können brauchen wir folgende Software:
 ## Testprotokolle <a name="Testprotokolle"></a><br>
 
 ### Testprotokoll für den Minecraftserver <a name="MC-Test"></a><br>
-|Test   |   |   |   |   |
+|Beschreibung Testgruppe:  |   |   |   |   |
 |--- |---|---|---|---|
 | A1 |   |   |   |   |
 | A2 |   |   |   |   |
