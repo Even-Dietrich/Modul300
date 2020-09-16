@@ -126,7 +126,7 @@ Auf allen VMs ist das Private Netzwerk 10.0.0.0/24 konfiguriert. Alle VMs erhalt
 
 ```Shell
     subconfig.vm.network :private_network, ip: "10.0.0.14"
-	subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+    subconfig.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
 
 ```
 
