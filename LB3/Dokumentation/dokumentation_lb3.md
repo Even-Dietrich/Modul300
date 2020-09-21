@@ -90,15 +90,26 @@ Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 
 
 ## Netzwerkplan: <a name="Netzwerkplan"></a>
+
 Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
 
 ![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/Netzwerkplan_nichtfertig.jpg)
 
 ## Sicherheit: <a name="Sicherheit"></a>
 
+Mit den Shell Scripts welche im Vagrantfile hinterlegt sind werden Firewall Regeln erstellt und die Firewall aktiviert.
+
+Folgende Firewall Regeln sind konfiguriert:
+```Shell
+    sudo ufw allow 22/tcp
+    sudo ufw allow 80/tcp
+    sudo ufw -f enable
+```
+
 ## Skript: <a name="Skript"></a>
 
 ## Wichtige Dockerbefehle: <a name="Befehle"></a><br>
+
 | Befehle | Auswirkung | 
 |--------|----------|
 |   docker stop $(docker ps -a -q)     |       Alle laufenden Container stoppen     |
@@ -132,6 +143,7 @@ In diesem Abschnitt sind alle Testprotokolle festgehalten.
 
   
 ### Alex: <a name="Alex"></a><br>
+
 Stand 16.09.2020:
 
 Ich hoffe, dass ich mit der Erfahrung von der LB2 in der LB3 ein komplexeres System aufsetzten kann. Aber ich habe noch nie mit Docker gearbeitet also ist heute das Ziel sich ein bisschen einzuarbeiten.
@@ -150,6 +162,7 @@ Rechenleistung, Hauptspeicher und Speicherplatz. Und es dreht sich hier um Megab
 
   
 ### Jason: <a name="Jason"></a><br>
+
 Stand 16.09.2020:
 
 Ich erhoffe mir das ich mit der Erfahrung von LB2 in der LB3 eine bessere und komplexere Arbeit abliefern kann. Ich habe jedoch noch nie mit Docker gearbeitet daher muss ich mich zuerst etwas einarbeiten.
