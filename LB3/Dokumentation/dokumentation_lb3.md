@@ -147,4 +147,5 @@ Rechenleistung, Hauptspeicher und Speicherplatz. Und es dreht sich hier um Megab
 
   
 ### Jason: <a name="Jason"></a><br>
-
+Stand 16.09.2020:
+Ich erhoffe mir das ich mit der Erfahrung von LB2 in der LB3 eine bessere und komplexere Arbeit abliefern kann.
