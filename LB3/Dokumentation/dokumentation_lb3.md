@@ -114,7 +114,7 @@ Folgende Firewall Regeln sind konfiguriert:
 |--------|----------|
 |   docker stop $(docker ps -a -q)     |       Alle laufenden Container stoppen     |
 |   docker rm $(docker ps -a -q)      |        Alle laufenden Container löschen   |
-|        |            |
+|   docker start [OPTIONS] CONTAINER [CONTAINER...]  |   Bestimmter Container starten   |
 |        |            |
 |        |            |
 |        |            |
