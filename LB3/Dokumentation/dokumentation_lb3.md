@@ -159,7 +159,9 @@ Rechenleistung, Hauptspeicher und Speicherplatz. Und es dreht sich hier um Megab
 >Quelle: <a href=https://www.cloud-mag.com/was-sind-container/#close>cloud-mag.com</a>
   
 ### Even: <a name="Even"></a><br>
+Stand 16.09.2020:
 
+In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere und komplexere Arbeit abzuliefern. Da ich aber zuvor noch nie mit Docker gearbeitet habe muss ihc mich zuerst einarbeiten in. 
   
 ### Jason: <a name="Jason"></a><br>
 
