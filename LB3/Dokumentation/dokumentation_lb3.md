@@ -203,9 +203,13 @@ Soll zustand:<br>
              - Der Adminuser kann den normalen User vom Server kicken<br>
 
 Tatsächliches Ergebnis:<br>
-             - Beide User kommen auf dem Server und können sich verständigen
+             - Beide User kommen auf dem Server und können sich verständigen<br>
+             - Der Adminuser kann den normalen User vom Server kicken<br>
              
 Analyse:<br>
+
+Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Umgebung eingesetzt werden. Die Benutzerberichtigung ist korrekt konfiguriert.
+
 
 
 ### Testprotokoll für den Proxyserver: <a name="Proxy-Test"></a><br>
