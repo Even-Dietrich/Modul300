@@ -28,7 +28,6 @@
 &nbsp;11.3 [Even](#Even)<br>
 &nbsp;11.4 [Jason](#Jason)<br>
 
-
 ## Allgemeine Bewetungskriterien <a name="Allgemein"></a>
 
 ### K1: Umbebung auf eigenem Notebook eingerichtet und funktionsfähig <a name="K1"></a>
@@ -87,6 +86,37 @@ Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 - <a href="https://www.minecraft.net/de-de/download">Minecraft Client, </a>damit wir auf den Server spielen können
 
 ## Unsere Lösung: <a name="Lösung"></a>
+
+### Installation vom Teamspeak-Server <a name="TS3-Server></a>
+
+Da wir Docker auf einer VM haben müssen wir zuerst die VM Starten.
+Um die VM zu starten muss man zuerst in den Ordner mit dem Vagrantfile, auf diesem Vagrantfile sind die Konfigurationseinstellungen, wie auch die Installation von Docker.
+ ```
+    Vagrant up
+    Vagrant ssh   
+ ```
+ 
+ 
+ Dann sind mir auf der VM! 
+ Dannach müssen wir nur noch den Teamspeak Server starten und die Lizenz akzeptieren
+ ```
+ docker run -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept teamspeak 
+ ```
+ Um auf den Server zu kommen braucht man nur noch die IP-Adresse des Teamspeak Servers, dannach kann man sich via den TS3-Client mit dem Server verbinden.
+ 
+![TS3-Connecten](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/TS3-Connecten.png)
+
+Wenn man sich verbindet kommt ein Feld und dieses Feld fordert auf den Admintoken einzugeben damit man die Adminrechte auf diesem Server bekommt.
+
+![TS3-Admintoken](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/TS3-Admintoken.png)
+
+Der Admintoken bekommt man, wenn man sich auf der VM via SSH zugreift und in der Konsole wird der Token angezeigt.
+
+![TS3-Admintoken-CLI](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/TS3-Admintoken-CLi.png)
+
+und schon ist man auf dem Server!
+
+![TS3-aufServer](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/TS3-aufServer.png)
 
 
 ## Netzwerkplan: <a name="Netzwerkplan"></a>
