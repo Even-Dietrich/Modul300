@@ -1,5 +1,7 @@
 # Modul300 Dokumentation für die LB3
 
+Unsere Dokumentation zur Leistungsbeurteilung 3
+
 ## Inhaltsverzeichnis:
 1 [Allgemeine Bewertungskriterien](#Allgemein)<br>
 &nbsp;1.1 [K1: Umgebung auf dem Notebook eingerichtet](#K1)<br>
@@ -173,14 +175,39 @@ Folgende Firewall Regeln sind konfiguriert:
 In diesem Abschnitt sind alle Testprotokolle festgehalten.
 
 ### Testprotokoll für den Minecraftserver: <a name="MC-Test"></a><br>
--
-### Testprotokoll für den Teamspeakserver: <a name="TS-Test"></a><br>
-Ist zustand: - Der Teamspeak Server wurde installiert und läuft auf der VM
-             - Die IP-Adresse des Servers ist bekannt
-             - Der Admintoken ist für einen User bekannt
-             - Die Tester sind im gleichen Netz
+Ist zustand:<br>
+             - Der Minecraft Server wurde installiert und ist gestartet<br>
+             - Die IP-Adresse des Servers ist bekannt<br>
+             - Auf dem Testclient ist der Minecraft Client installiert<br>
              
-Soll zustand:
+Soll zustand:<br>
+             - Man kann via den Minecraft-Client auf den Server zugreiffen<br>
+             - Wenn man auf dem Server ist kann man das Spiel spielen<br>
+             
+Tatsächliches Ergebnis:<br>
+             - Beide User kommen auf dem Server und können sich verständigen<br>
+             
+Analyse:<br>
+             
+### Testprotokoll für den Teamspeakserver: <a name="TS-Test"></a><br>
+Ist zustand:<br> 
+             - Der Teamspeak Server wurde installiert und läuft auf der VM<br>
+             - Die IP-Adresse des Servers ist bekannt<br>
+             - Auf den Testclients sind Teamspeak3 Clients installiert<br>
+             - Der Admintoken ist nur für einen User bekannt<br>
+             - Die Tester sind im gleichen Netz<br>
+             
+Soll zustand:<br>
+             - Beider User kommen auf den Server<br>
+             - Beide User können miteinander reden und verstehen einander<br>
+             - Der Adminuser kann den normalen User vom Server kicken<br>
+
+Tatsächliches Ergebnis:<br>
+             - Beide User kommen auf dem Server und können sich verständigen
+             
+Analyse:<br>
+
+
 ### Testprotokoll für den Proxyserver: <a name="Proxy-Test"></a><br>
 -
 ### Testprotokoll für den Webserver: <a name="Web-Test"></a><br>
