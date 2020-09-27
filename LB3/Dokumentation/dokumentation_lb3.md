@@ -87,7 +87,19 @@ Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 
 ## Unsere Lösung: <a name="Lösung"></a>
 
-### Installation vom Teamspeak-Server <a name="TS3-Server></a>
+### Installation vom Minecraft-Server <a name="MC-Server"></a>
+
+Den Minecraft Server ist einfach zum installieren man braucht nur den folgenden Befehl eingeben:
+```
+docker run -d -p 25565:25565 --name mc -e EULA=TRUE itzg/minecraft-server
+```
+Dannach kann man schon via den Minecraft Client mit der Server IP auf den Server zugreiffen.
+![MC-Connecten](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/MC-Connecten.png)
+
+Nachdem man die man sich verbunden hat kann man auch schon mit dem Spielen anfangen.
+![MC-inGame](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/MC-inGame.png)
+
+### Installation vom Teamspeak-Server <a name="TS3-Server"></a>
 
 Da wir Docker auf einer VM haben müssen wir zuerst die VM Starten.
 Um die VM zu starten muss man zuerst in den Ordner mit dem Vagrantfile, auf diesem Vagrantfile sind die Konfigurationseinstellungen, wie auch die Installation von Docker.
