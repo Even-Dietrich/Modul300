@@ -16,7 +16,7 @@
 7 [Sicherheit](#Sicherheit)<br>
 8 [Skript](#Skript)<br>
 9 [Wichtige Dockerbefehle](#Befehle)<br>
-10 [Testprotokolle](#Testprotokoll)<br>
+10 [Testprotokolle](#Testprotokolle)<br>
 &nbsp;10.1 [Minecraftserver Testprotokoll](#MC-Test)<br>
 &nbsp;10.2 [Teamspeakserver Testprotokoll](#TS-Test)<br>
 &nbsp;10.3 [Proxyserver Testprotokoll](#Proxy-Test)<br>
@@ -95,8 +95,6 @@ Um die VM zu starten muss man zuerst in den Ordner mit dem Vagrantfile, auf dies
     Vagrant up
     Vagrant ssh   
  ```
- 
- 
  Dann sind mir auf der VM! 
  Dannach müssen wir nur noch den Teamspeak Server starten und die Lizenz akzeptieren
  ```
@@ -117,6 +115,12 @@ Der Admintoken bekommt man, wenn man sich auf der VM via SSH zugreift und in der
 und schon ist man auf dem Server!
 
 ![TS3-aufServer](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/TS3-aufServer.png)
+
+Um den Teamspeak 3 Server im Hintergrund laufen lassen damit man auf der VM mehrere Containers laufen lassen will kann man den Server mit folgendem Befehl starten:
+
+```
+docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept teamspeak 
+```
 
 
 ## Netzwerkplan: <a name="Netzwerkplan"></a>
@@ -159,7 +163,12 @@ In diesem Abschnitt sind alle Testprotokolle festgehalten.
 ### Testprotokoll für den Minecraftserver: <a name="MC-Test"></a><br>
 -
 ### Testprotokoll für den Teamspeakserver: <a name="TS-Test"></a><br>
--
+Ist zustand: - Der Teamspeak Server wurde installiert und läuft auf der VM
+             - Die IP-Adresse des Servers ist bekannt
+             - Der Admintoken ist für einen User bekannt
+             - Die Tester sind im gleichen Netz
+             
+Soll zustand:
 ### Testprotokoll für den Proxyserver: <a name="Proxy-Test"></a><br>
 -
 ### Testprotokoll für den Webserver: <a name="Web-Test"></a><br>
