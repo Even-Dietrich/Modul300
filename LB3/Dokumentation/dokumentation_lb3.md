@@ -112,7 +112,7 @@ Wenn man sich verbindet kommt ein Feld und dieses Feld fordert auf den Admintoke
 
 Der Admintoken bekommt man, wenn man sich auf der VM via SSH zugreift und in der Konsole wird der Token angezeigt.
 
-![TS3-Admintoken-CLI](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/TS3-Admintoken-CLi.png)
+![TS3-Admintoken-CLI](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/TS3-Admintoken-CLI.png)
 
 und schon ist man auf dem Server!
 
