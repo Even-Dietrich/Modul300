@@ -101,6 +101,9 @@ Dannach kann man schon via den Minecraft Client mit der Server IP auf den Server
 Nachdem man die man sich verbunden hat kann man auch schon mit dem Spielen anfangen.
 ![MC-inGame](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/MC-inGame.png)
 
+Beweisvideo das mehrere Personen mit auf den Server kommen
+![MC-Screen](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/vid/MC-Screen.mov)
+
 ### Installation vom Teamspeak-Server <a name="TS3-Server"></a>
 
 Da wir Docker auf einer VM haben müssen wir zuerst die VM Starten.
