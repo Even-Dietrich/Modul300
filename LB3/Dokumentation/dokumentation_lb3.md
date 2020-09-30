@@ -189,6 +189,11 @@ Um den Webserver zu installieren muss man nur den folgenden Befehl ausführen:
   docker run -d -p 8080 bitnami/apache
 ```
 
+Wenn die Installation fertig ist kann man auf die Testseite zugreifen:
+
+![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/testweb.jpeg)
+
+
 ## Wichtige Dockerbefehle: <a name="Befehle"></a><br>
 
 | Befehle | Auswirkung | 
