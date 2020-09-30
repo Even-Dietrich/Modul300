@@ -69,7 +69,12 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
   -  Reflexion
 
 ### 1.6 K6: Systemtechnische Bewertungspunkte<a name="K6"></a>
--
+- Zusätzliche systemtechnische Bewertungspunkte
+  - Umfangreiche Vernetzung der Container-Infrastruktur (Ansätze für reale Nutzungszenarien)
+- Image-Bereitstellung
+- Continuous Integration
+- Cloud-Integration
+- Elemente aus Kubernetesübung sind dokumentiert
 
 
 ## 2 Unsere Idee: <a name="Idee"></a>
