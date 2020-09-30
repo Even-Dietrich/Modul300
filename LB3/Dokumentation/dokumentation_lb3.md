@@ -254,7 +254,8 @@ Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Um
 ### Testprotokoll für den Fileserver: <a name="File-Test"></a><br>
 
 #### Fall 1
--Ist zustand:
+
+Ist zustand:
 - Der File Server wurde installiert und läuft auf der VM
 - Client hat Zugriff auf das Filesystem 
 - Folder Test wurde auf dem Server erstellt 
@@ -276,6 +277,7 @@ Analyse:
 Der Bentuzer hat Zugriff auf den Fileserver und sieht die Ordner 
 
 #### Fall 2
+
 Ist zustand:
 - Der File Server wurde installiert und läuft auf der VM
 - Client hat Zugriff auf das Filesystem 
