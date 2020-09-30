@@ -277,6 +277,8 @@ In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere un
 ### Stand 30.09.2020
 
 Ich lernte heute verschiede Befehle kennen:
+| Befehl | Auswirkung |
+|--------|------------|
 | docker stop $(docker ps -a -q)     |       Alle laufenden Container stoppen     |
 | docker rm $(docker ps -a -q)      |        Alle laufenden Container löschen   |
 | docker run -p -d nginx            | Installiert den Container Nginx (Proxy) |
