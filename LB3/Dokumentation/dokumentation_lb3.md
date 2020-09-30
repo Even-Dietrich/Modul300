@@ -77,7 +77,7 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 - Elemente aus Kubernetesübung sind dokumentiert
 
 
-## 2 Unsere Idee: <a name="Idee"></a>
+# 2 Unsere Idee: <a name="Idee"></a>
 
 Wir wollen folgende Server aufsetzten und konfigurieren:
 
@@ -87,7 +87,7 @@ Wir wollen folgende Server aufsetzten und konfigurieren:
   - Apache Webserver mit einem Communityforum
   - Fileserver als Backup für die Daten des Minecraftserver
 
-## 3 Arbeitsaufteilung: <a name="Arbeitsaufteilung"></a>
+# 3 Arbeitsaufteilung: <a name="Arbeitsaufteilung"></a>
 
 Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir an folgenden Servers:
 
@@ -97,7 +97,7 @@ Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir a
   - Adam, Apache/Webserver mit Installation eines Open Source Forum
   - Fileserver je nach auslastung
 
-## 4 Software: <a name="Software"></a>
+# 4 Software: <a name="Software"></a>
 
 Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 
@@ -105,16 +105,16 @@ Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 - <a href="https://www.minecraft.net/de-de/download">Minecraft Client, </a>damit wir auf den Server spielen können
 - Browser
 
-## 5 Unsere Lösung: <a name="Lösung"></a>
+# 5 Unsere Lösung: <a name="Lösung"></a>
 
-### 5.1 Netzwerkplan: <a name="Netzwerkplan"></a>
+## 5.1 Netzwerkplan: <a name="Netzwerkplan"></a>
 
 Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
 
 ![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/Netzwerkplan.png)
 
 
-### 5.2 Installation vom Minecraft-Server <a name="MC-Server"></a>
+## 5.2 Installation vom Minecraft-Server <a name="MC-Server"></a>
 
 Den Minecraft Server ist einfach zum installieren man braucht nur den folgenden Befehl eingeben:
 ```
@@ -129,7 +129,7 @@ Nachdem man die man sich verbunden hat kann man auch schon mit dem Spielen anfan
 Beweisvideo das mehrere Personen mit auf den Server kommen (Das Video muss heruntergeladen werden, da es zu gross ist und Github unterstützt dies nicht)<br>
 ![MC-Screen](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/vid/MC-Screen.mov)
 
-### Installation vom Teamspeak-Server <a name="TS3-Server"></a>
+## Installation vom Teamspeak-Server <a name="TS3-Server"></a>
 
 Da wir Docker auf einer VM haben müssen wir zuerst die VM Starten.
 Um die VM zu starten muss man zuerst in den Ordner mit dem Vagrantfile, auf diesem Vagrantfile sind die Konfigurationseinstellungen, wie auch die Installation von Docker.
@@ -163,6 +163,18 @@ Um den Teamspeak 3 Server im Hintergrund laufen lassen damit man auf der VM mehr
 ```
 docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept teamspeak 
 ```
+## Installation Fileserver
+
+Um den Fileserver zu installieren muss  man folgenden Befehl ausführen:
+```
+docker run -d -p 80:80 owncloud:8.1
+```
+
+Wenn dies gemacht ist muss man noch folgende Konfiguration machen und die Installation abschliessen:
+
+![MC-inGame](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/MC-inGame.png)
+
+
 
 ## Sicherheit: <a name="Sicherheit"></a>
 
@@ -238,7 +250,7 @@ Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Um
 ### Testprotokoll für den Fileserver: <a name="File-Test"></a><br>
 -
 
-## Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
+# Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
   
 ## Adam: <a name="Adam"></a><br>
 In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere und komplexere Arbeit abzuliefern. Da ich aber zuvor noch nie mit Docker gearbeitet habe muss ihc mich zuerst einarbeiten in.
