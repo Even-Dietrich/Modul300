@@ -342,8 +342,52 @@ Analyse:
 
 Das löschen einer Datei funktioniert und kann per Befehl umgesetz werden
 
-# 8 Kubernaters: <a name="Kubes"></a><br>
-https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/kubernetic.JPG
+# 8 Kubernetes: <a name="Kubes"></a><br>
+Zum verstehen von Kubernetes gibt es einige Begriffe die wir Ihnen kurz erklären. 
+
+Grundbegriffe zu Kubeernetes:
+
+Service Discorvery
+
+Ist der Prozess um einen Cleint mit Verbindungsinformationen zu versorgen. 
+Da in dem meisten Umgebungen mehrer Services mit mehrer Server bestehen, nutzt man einfach einen eindeutigen Namen zum erkennen des angefragen Services. Bei unserem Fall handelt es sich um die Verneztung der einzelnen Container. 
+
+Containervernetzung beginnt mit der Annahme, dass es eine Route zwischen Hosts gibt – egal, ob diese Route über das öffentliche Internet läuft oder nur über einen schnellen lokalen Switch.
+
+Also ist der Service Discorvery dazu da um Instanzen zu finden und die Vernetzung kümmert sich darum, die Verbindung aufzubauen. 
+
+Weiter Funktionen:
+- Health Checking
+- Failover
+- Load Balancing
+-  Verschlüsselung der übertragenen Daten
+- Isolieren von Containergruppen.
+
+Load Balancing 
+
+Anfragen werden auf parrallel arbeitende Systeme verteilt. Somit stellt man sicher, dass kein System  überlastet wird. 
+
+Cluster
+
+Dabei handelt es sich um ein Rechnerverbund. Die in einem Cluster befindlichen Computer  werden auch oft als Serverfarm bezeichnet.
+
+
+Kubernets
+
+Kubernetes ist ein Open-Source-System zur Automatisierung der Bereitstellung, Skalierung und Verwaltung von Container-Anwendungen. Es zielt darauf eine Plattform zur verfügung zu stellen um mehrer Container auf verschieden Hotst zu verteieln. Dabei unstersützt es viele Container-Tools wie Docker. 
+
+![Kubernaters] https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/kubernetic.JPG
+
+
+Merkmale
+
+   Immutable (Unveränderlich) statt Mutable.
+   Deklarative statt Imperative (Ausführen von Anweisungen) Konfiguration.
+   Selbstheilende Systeme - Neustart bei Absturz.
+   Entkoppelte APIs – LoadBalancer / Ingress (Reverse Proxy).
+   Skalieren der Services durch Änderung der Deklaration.
+   Anwendungsorientiertes statt Technik (z.B. Route 53 bis AWS) Denken.
+   Abstraktion der Infrastruktur statt in Rechnern Denken.
 
 
 # 9 Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
