@@ -367,6 +367,10 @@ Ich hoffe, dass ich mit der Erfahrung von der LB2 in der LB3 ein komplexeres Sys
 >Container verbrauchen also im Vergleich zu VMs deutlich weniger Ressourcen wie
 Rechenleistung, Hauptspeicher und Speicherplatz. Und es dreht sich hier um Megabytes bei Containern im Vergleich zu Gigabytes bei VMs. Daher passen auf einen Server sehr viel mehr Container als virtuelle Maschinen. Zudem sind Container schneller einsatzbereit: Während VMs manchmal mehrere Minuten zum Start benötigen, stehen Anwendungen hier beinahe sofort zur Verfügung.
 >Quelle: <a href=https://www.cloud-mag.com/was-sind-container/#close>cloud-mag.com</a>
+
+### Wissenstand vom 30.09.2020:
+
+Ich habe mein Wissen über Docker deutlich verbessert, ich weiss wie man Docker in einem Produktiven Umfeld einsetzt. Der grosse Vorteil von Docker ist dass es viel weniger Ressourcen vom Host braucht als bei einer VM. Auf meinem Mac kann ich ohne Probleme mehrere Docker und Services am laufen haben, die von einander getrennt sind und noch ohne Probleme noch Frontend Programme für die Services verwenden. Das ist mit VMs nicht möglich, da eine VM mehr Ressourcen vom Host braucht.
   
 ## Even: <a name="Even"></a><br>
 
