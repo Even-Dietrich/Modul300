@@ -109,8 +109,7 @@ Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 
 ## 5.1 Netzwerkplan: <a name="Netzwerkplan"></a>
 
-Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
-
+Da Docker die IP automatisch verteilt, kann man im Netzwerkplan die IP nicht einteilen.
 ![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/Netzwerkplan.png)
 
 
@@ -371,6 +370,11 @@ Rechenleistung, Hauptspeicher und Speicherplatz. Und es dreht sich hier um Megab
 ### Wissenstand vom 30.09.2020:
 
 Ich habe mein Wissen über Docker deutlich verbessert, ich weiss wie man Docker in einem Produktiven Umfeld einsetzt. Der grosse Vorteil von Docker ist dass es viel weniger Ressourcen vom Host braucht als bei einer VM. Auf meinem Mac kann ich ohne Probleme mehrere Docker und Services am laufen haben, die von einander getrennt sind und noch ohne Probleme noch Frontend Programme für die Services verwenden. Das ist mit VMs nicht möglich, da eine VM mehr Ressourcen vom Host braucht.
+
+### Reflexion
+
+Durch Github konnten wir ohne Probleme unsere Arbeitaufteilen und gleichzeit an der LB3 arbeiten. Mit unserem Whatsapp-Chat konnten wir uns auch immer auf dem neusten Stand halten.
+Durch die Arbeit an der LB2 hatte ich keine grosse Probleme, mich mit Docker ausseinander setzten.
   
 ## Even: <a name="Even"></a><br>
 
