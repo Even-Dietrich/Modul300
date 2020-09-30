@@ -182,19 +182,6 @@ Wenn man mit dem Setup fertig ist sollte man Owncloud öffnen können und sich a
 
 ![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/owncloud2.jpeg)
 
-
-
-## Sicherheit: <a name="Sicherheit"></a>
-
-Mit den Shell Scripts welche im Vagrantfile hinterlegt sind werden Firewall Regeln erstellt und die Firewall aktiviert.
-
-Folgende Firewall Regeln sind konfiguriert:
-```Shell
-    sudo ufw allow 22/tcp
-    sudo ufw allow 80/tcp
-    sudo ufw -f enable
-```
-
 ## Wichtige Dockerbefehle: <a name="Befehle"></a><br>
 
 | Befehle | Auswirkung | 
