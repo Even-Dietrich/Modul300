@@ -179,9 +179,9 @@ Folgende Firewall Regeln sind konfiguriert:
 
 | Befehle | Auswirkung | 
 |--------|----------|
-|   docker stop $(docker ps -a -q)     |       Alle laufenden Container stoppen     |
-|   docker rm $(docker ps -a -q)      |        Alle laufenden Container löschen   |
-|   docker start [OPTIONS] CONTAINER [CONTAINER...]  |   Bestimmter Container starten   |
+|   `docker stop $(docker ps -a -q)`     |       Alle laufenden Container stoppen     |
+|   `docker rm $(docker ps -a -q)`      |        Alle laufenden Container löschen   |
+|   `docker start [OPTIONS] CONTAINER [CONTAINER...]`  |   Bestimmter Container starten   |
 |        |            |
 |        |            |
 |        |            |
@@ -271,3 +271,25 @@ In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere un
 Stand 16.09.2020:
 
 Ich erhoffe mir das ich mit der Erfahrung von LB2 in der LB3 eine bessere und komplexere Arbeit abliefern kann. Ich habe jedoch noch nie mit Docker gearbeitet daher muss ich mich zuerst etwas einarbeiten.
+
+Um mich über Docker zu informieren benutzte ich das GitHub von herr Bernet und Tutorials auf Youtube. Docker ist für mich ziemlich komplex und kompliziert, mir ist noch sehr vieles davon unklar aber das wird sich hoffentlich mit der Zeit bessern.
+
+Wichtige Befehle für Docker:
+- `docker start [OPTIONS] CONTAINER [CONTAINER...]` > Startet einen Container, dabei müssen noch Parameter und angaben mitgegeben werden.
+- `docker stop $(docker ps -a -q)` > Stoppt alle laufenden Container.
+
+Wichtiges für ein Dockerfile:
+```Dockerfile
+  # Paket von hub.docker
+  FROM php:7.0-apache
+  # kopiert ein File in den Container
+  COPY src/ /var/www/html/
+  # Gibt dem Container an das der Port 80 offen sein soll
+  EXPOSE 80
+```
+
+
+
+Stand 30.09.2020:
+
+
