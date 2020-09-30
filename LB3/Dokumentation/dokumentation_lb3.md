@@ -17,19 +17,19 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 &nbsp;5.1 [Netzwerkplan](#Netzwerkplan)<br>
 &nbsp;5.2 [Installation Minecraft Server](#MC-Server)<br>
 &nbsp;5.3 [Installation Teamspeak Server](#TS-Server)<br>
-6 [Sicherheit](#Sicherheit)<br>
-7 [Wichtige Dockerbefehle](#Befehle)<br>
-8 [Testprotokolle](#Testprotokolle)<br>
-&nbsp;9.1 [Minecraftserver Testprotokoll](#MC-Test)<br>
-&nbsp;9.2 [Teamspeakserver Testprotokoll](#TS-Test)<br>
-&nbsp;9.3 [Proxyserver Testprotokoll](#Proxy-Test)<br>
-&nbsp;9.4 [Webserver Testprotokoll](#Web-Test)<br>
-&nbsp;9.5 [Fileserver Testprotokoll](#File-Test)<br>
-10 [Persönlicher Wissensstand und Reflexion](#Wissensstand)<br>
-&nbsp;10.1 [Adam](#Adam)<br>
-&nbsp;10.2 [Alex](#Alex)<br>
-&nbsp;10.3 [Even](#Even)<br>
-&nbsp;10.4 [Jason](#Jason)<br>
+6 [Wichtige Dockerbefehle](#Befehle)<br>
+7 [Testprotokolle](#Testprotokolle)<br>
+&nbsp;7.1 [Minecraftserver Testprotokoll](#MC-Test)<br>
+&nbsp;7.2 [Teamspeakserver Testprotokoll](#TS-Test)<br>
+&nbsp;7.3 [Proxyserver Testprotokoll](#Proxy-Test)<br>
+&nbsp;7.4 [Webserver Testprotokoll](#Web-Test)<br>
+&nbsp;7.5 [Fileserver Testprotokoll](#File-Test)<br>
+8 [Kubernaters](#Kubes)<br>
+9 [Persönlicher Wissensstand und Reflexion](#Wissensstand)<br>
+&nbsp;9.1 [Adam](#Adam)<br>
+&nbsp;9.2 [Alex](#Alex)<br>
+&nbsp;9.3 [Even](#Even)<br>
+&nbsp;9.4 [Jason](#Jason)<br>
 
 ## 1 Allgemeine Bewetungskriterien <a name="Allgemein"></a>
 
@@ -128,7 +128,7 @@ Nachdem man die man sich verbunden hat kann man auch schon mit dem Spielen anfan
 Beweisvideo das mehrere Personen mit auf den Server kommen (Das Video muss heruntergeladen werden, da es zu gross ist und Github unterstützt dies nicht)<br>
 ![MC-Screen](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/vid/MC-Screen.mov)
 
-## Installation vom Teamspeak-Server <a name="TS3-Server"></a>
+## 5.3 Installation vom Teamspeak-Server <a name="TS3-Server"></a>
 
 Da wir Docker auf einer VM haben müssen wir zuerst die VM Starten.
 Um die VM zu starten muss man zuerst in den Ordner mit dem Vagrantfile, auf diesem Vagrantfile sind die Konfigurationseinstellungen, wie auch die Installation von Docker.
@@ -162,7 +162,7 @@ Um den Teamspeak 3 Server im Hintergrund laufen lassen damit man auf der VM mehr
 ```
 docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept teamspeak 
 ```
-## Installation Fileserver
+## 5.4 Installation Fileserver
 
 Um den Fileserver zu installieren muss  man folgenden Befehl ausführen:
 ```
@@ -177,11 +177,11 @@ via localhost:80 zugreifen setup fertig stellen login: mc-server pw: 1234
 <br>
 
 
-Wenn man mit dem Setup fertig ist sollte man Owncloud öffnen können und sich anmelden:
+Wenn man mit dem Setup fertig ist kann man Owncloud öffnen können und sich anmelden:
 
 ![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/owncloud2.jpeg)
 
-## Installation Webserver
+## 5.5 Installation Webserver
 
 Um den Webserver zu installieren muss man nur den folgenden Befehl ausführen:
 ```
@@ -193,7 +193,7 @@ Wenn die Installation fertig ist kann man auf die Testseite zugreifen:
 ![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/testweb.jpeg)
 
 
-## Wichtige Dockerbefehle: <a name="Befehle"></a><br>
+## 6 Wichtige Dockerbefehle: <a name="Befehle"></a><br>
 
 | Befehle | Auswirkung | 
 |--------|----------|
@@ -206,11 +206,11 @@ Wenn die Installation fertig ist kann man auf die Testseite zugreifen:
 |   `docker log`     |      Zeigt die Logs der einzelnen Container an      |
 |   `docker run --rm -d -p xxxx:xxxx Container`     |      Bestimmter Container an bestimmten Port weiterleiten      |
 
-## Testprotokolle: <a name="Testprotokolle"></a><br>
+## 7 Testprotokolle: <a name="Testprotokolle"></a><br>
 
 In diesem Abschnitt sind alle Testprotokolle festgehalten.
 
-### Testprotokoll für den Minecraftserver: <a name="MC-Test"></a><br>
+### 7.1 Testprotokoll für den Minecraftserver: <a name="MC-Test"></a><br>
 
 Ist zustand:<br>
              - Der Minecraft Server wurde installiert und ist gestartet<br>
@@ -226,7 +226,7 @@ Tatsächliches Ergebnis:<br>
              
 Analyse:<br>
              
-### Testprotokoll für den Teamspeakserver: <a name="TS-Test"></a><br>
+### 7.2 Testprotokoll für den Teamspeakserver: <a name="TS-Test"></a><br>
 
 Ist zustand:<br> 
              - Der Teamspeak Server wurde installiert und läuft auf der VM<br>
@@ -250,13 +250,13 @@ Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Um
 
 
 
-### Testprotokoll für den Proxyserver: <a name="Proxy-Test"></a><br>
+### 7.3 Testprotokoll für den Proxyserver: <a name="Proxy-Test"></a><br>
 
 - Der Proxyserver wurde nicht umgesetzt.
 
 
 
-### Testprotokoll für den Webserver: <a name="Web-Test"></a><br>
+### 7.4 Testprotokoll für den Webserver: <a name="Web-Test"></a><br>
 
 Ist-Zustand:
 - Webserver ist installiert und läuft auf der VM
@@ -275,9 +275,7 @@ Analyse:
 
 Der Webserver und die Webseite funktioniert einfwandfrei.
 
-
-
-### Testprotokoll für den Fileserver: <a name="File-Test"></a><br>
+### 7.5 Testprotokoll für den Fileserver: <a name="File-Test"></a><br>
 
 #### Fall 1
 
@@ -342,16 +340,18 @@ Tatsächliches Ergebnis:
 
 Analyse:
 
-Das löschen einer Datei funktioniert und kann per Befehl umgesetz werden $
+Das löschen einer Datei funktioniert und kann per Befehl umgesetz werden
 
-# Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
+# 8 Kubernaters: <a name="Kubes"></a><br>
+
+# 9 Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
   
-## Adam: <a name="Adam"></a><br>
+## 9.1 Adam: <a name="Adam"></a><br>
 In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere und komplexere Arbeit abzuliefern. Da ich aber zuvor noch nie mit Docker gearbeitet habe muss ihc mich zuerst einarbeiten in.
 
 Mein Ziel an der LB3 ist es einen Webserver mit Installation eines Open Source Forum auf der VM zu Installieren. Dank meines vorwissens von der LB2 kann ich mitlerweile so komplexe sachen verstehen jedoch muss ich mich aber noch mit Docker einarbeiten, es ist nämlich recht Kompliziert 
   
-## Alex: <a name="Alex"></a><br>
+## 9.2 Alex: <a name="Alex"></a><br>
 
 ### Stand 16.09.2020:
 
@@ -376,7 +376,7 @@ Ich habe mein Wissen über Docker deutlich verbessert, ich weiss wie man Docker 
 Durch Github konnten wir ohne Probleme unsere Arbeitaufteilen und gleichzeit an der LB3 arbeiten. Mit unserem Whatsapp-Chat konnten wir uns auch immer auf dem neusten Stand halten.
 Durch die Arbeit an der LB2 hatte ich keine grosse Probleme, mich mit Docker ausseinander setzten.
   
-## Even: <a name="Even"></a><br>
+## 9.3 Even: <a name="Even"></a><br>
 
 ### Stand 16.09.2020:
 
@@ -394,7 +394,7 @@ Ich lernte heute verschiede Befehle kennen:
 
 Dazu lernte ich noch den Container Nginx kennen. Mit diesem Container wollten wir den Reverse Proxy realisieren. Dazu versuchte ich mit mehreren Anleitung durchzuführen was ich aber am Ende nicht machte. Da wir in der LB3 die Punkte von K4 nicht umsetzt müssen wurde der Reverse Proxy nicht umgesetzt. Trotzdem hätte ich mit mehr Zeit diesen mit dem Angesammelten Wissen realisieren.
   
-## Jason: <a name="Jason"></a><br>
+##  9.4 Jason: <a name="Jason"></a><br>
 
 ### Vorwissen:
 
