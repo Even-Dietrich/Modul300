@@ -175,7 +175,7 @@ Wenn dies gemacht ist muss man noch folgende Konfiguration machen und die Instal
 ![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/owncloud.jpeg)
 
 via localhost:80 zugreifen setup fertig stellen login: mc-server pw: 1234
-
+<br>
 Wenn man mit dem Setup fertig ist sollte man Owncloud öffnen können und sich anmelden:
 
 ![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/owncloud2.jpeg)
