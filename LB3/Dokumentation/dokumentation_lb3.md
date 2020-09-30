@@ -301,3 +301,5 @@ Heute habe ich mehr über Docker gelernt. Ich habe mit meinen Teamkollegen die D
 
 Die Arbeit in dieser LB haben wir im Team von anfang an sehr gut geplant und aufgeteilt. Wir haben die Dokumentation sehr früh und übersichtlich gestaltet und darin unsere Arbeitsaufteilung festgehalten. 
 
+Ich finde wir haben in der LB3 sehr gut von der LB2 profitiert und unsere Arbeitsweise erfolgreich angepasst und umgesetzt. Ich bin sehr zufrieden mit unserer Arbeit.
+
