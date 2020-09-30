@@ -229,7 +229,9 @@ Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Um
 ## Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
   
 ### Adam: <a name="Adam"></a><br>
+In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere und komplexere Arbeit abzuliefern. Da ich aber zuvor noch nie mit Docker gearbeitet habe muss ihc mich zuerst einarbeiten in.
 
+Mein Ziel an der LB3 ist es einen Webserver mit Installation eines Open Source Forum auf der VM zu Installieren. Dank meines vorwissens von der LB2 kann ich mitlerweile so komplexe sachen verstehen jedoch muss ich mich aber noch mit Docker einarbeiten, es ist nämlich recht Kompliziert 
   
 ### Alex: <a name="Alex"></a><br>
 
