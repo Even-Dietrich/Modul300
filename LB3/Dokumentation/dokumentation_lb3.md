@@ -268,6 +268,10 @@ In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere un
   
 ### Jason: <a name="Jason"></a><br>
 
+Vorwissen:
+
+Ich habe bezogen auf Docker oder Kubernetes überhaupt kein Vorwissen und muss mir alles von Anfang an aneignen und nachlesen. Dies sollte aber kein Problem sein.
+
 Stand 16.09.2020:
 
 Ich erhoffe mir das ich mit der Erfahrung von LB2 in der LB3 eine bessere und komplexere Arbeit abliefern kann. Ich habe jedoch noch nie mit Docker gearbeitet daher muss ich mich zuerst etwas einarbeiten.
@@ -292,4 +296,5 @@ Wichtiges für ein Dockerfile:
 
 Stand 30.09.2020:
 
+Heute habe ich mehr über Docker gelernt. Ich habe mit meinen Teamkollegen die Dockerfiles erstellt und die Umgebung weiter.
 
