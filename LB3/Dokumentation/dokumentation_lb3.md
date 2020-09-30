@@ -9,7 +9,7 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 &nbsp;1.3 [K3: Titel](#K3)<br>
 &nbsp;1.4 [K4: Titel](#K4)<br>
 &nbsp;1.5 [K5: Titel](#K5)<br>
-&nbsp;1.6 [K4: Titel](#K6)<br>
+&nbsp;1.6 [K6: Titel](#K6)<br>
 2 [Unsere Idee](#Idee)<br>
 3 [Unsere Arbeitsaufteilung](#Arbeitsaufteilung)<br>
 4 [Verwendete Software](#Software)<br>
@@ -48,7 +48,11 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 - Persönlicher Wissenstand im Bezug auf die wichtigsten Themen ist dokumentiert (Containerisierung / Docker, Microservices), siehe [Persönlicher Wissensstand](#Wissensstand)
 
 ### K3: <a name="K3"></a>
--
+- Bestehende Docker-Container sind kombiniert
+- Bestehnde Container als Backend, Desktop-App als Frontend sind eingesetzt
+- Volumes zur persistenten Datenablage ist eingerichtet
+- Eingerichte Umgebungen ist dokumentiert
+- Funktionsweise ist getestet und Testfälle sind dokumentiert
 
 ### K4: <a name="K4"></a>
 -
@@ -86,6 +90,7 @@ Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 
 - <a href="https://www.teamspeak.com/en/downloads/">TS3 Client, </a>damit wir auf den Teamspeakserver zugreiffen können
 - <a href="https://www.minecraft.net/de-de/download">Minecraft Client, </a>damit wir auf den Server spielen können
+- Browser
 
 ## Unsere Lösung: <a name="Lösung"></a>
 
@@ -101,7 +106,7 @@ Dannach kann man schon via den Minecraft Client mit der Server IP auf den Server
 Nachdem man die man sich verbunden hat kann man auch schon mit dem Spielen anfangen.
 ![MC-inGame](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/MC-inGame.png)
 
-Beweisvideo das mehrere Personen mit auf den Server kommen
+Beweisvideo das mehrere Personen mit auf den Server kommen (Das Video muss heruntergeladen werden, da es zu gross ist und Github unterstützt dies nicht)<br>
 ![MC-Screen](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/vid/MC-Screen.mov)
 
 ### Installation vom Teamspeak-Server <a name="TS3-Server"></a>
