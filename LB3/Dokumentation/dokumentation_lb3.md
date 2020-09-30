@@ -182,6 +182,13 @@ Wenn man mit dem Setup fertig ist sollte man Owncloud öffnen können und sich a
 
 ![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/owncloud2.jpeg)
 
+## Installation Webserver
+
+Um den Webserver zu installieren muss man nur den folgenden Befehl ausführen:
+```
+  docker run -d -p 8080 bitnami/apache
+```
+
 ## Wichtige Dockerbefehle: <a name="Befehle"></a><br>
 
 | Befehle | Auswirkung | 
