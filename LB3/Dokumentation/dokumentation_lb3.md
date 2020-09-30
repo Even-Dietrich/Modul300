@@ -61,10 +61,10 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 ### 1.5 K5: Allgemein <a name="K5"></a>
 - Allgemein- 
   - Kreativität
-  - Komplexität- 
-- UmfangUmsetzung eigener Ideen- 
+  - Komplexität 
+- UmfangUmsetzung eigener Ideen
   - Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt
-- Persönlicher Lernentwicklung- 
+- Persönlicher Lernentwicklung 
   - Vergleich Vorwissen, Wissenszuwachs
   -  Reflexion
 
