@@ -272,7 +272,17 @@ Rechenleistung, Hauptspeicher und Speicherplatz. Und es dreht sich hier um Megab
 
 ### Stand 16.09.2020:
 
-In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere und komplexere Arbeit abzuliefern. Da ich aber zuvor noch nie mit Docker gearbeitet habe muss ihc mich zuerst einarbeiten in. 
+In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere und komplexere Arbeit abzuliefern. Da ich aber zuvor noch nie mit Docker gearbeitet habe muss ihc mich zuerst einarbeiten in.
+
+### Stand 30.09.2020
+
+Ich lernte heute verschiede Befehle kennen:
+| docker stop $(docker ps -a -q)     |       Alle laufenden Container stoppen     |
+| docker rm $(docker ps -a -q)      |        Alle laufenden Container löschen   |
+| docker run -p -d nginx            | Installiert den Container Nginx (Proxy) |
+|docker container ps                 | Zeigt alle Container an |
+
+Dazu lernte ich noch den Container Nginx kennen. Mit diesem Container wollten wir den Reverse Proxy realisieren. Dazu versuchte ich mit mehreren Anleitung durchzuführen was ich aber am Ende nicht machte. Da wir in der LB3 die Punkte von K4 nicht umsetzt müssen wurde der Reverse Proxy nicht umgesetzt. Trotzdem hätte ich mit mehr Zeit diesen mit dem Angesammelten Wissen realisieren.
   
 ## Jason: <a name="Jason"></a><br>
 
