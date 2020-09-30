@@ -381,13 +381,13 @@ Kubernetes ist ein Open-Source-System zur Automatisierung der Bereitstellung, Sk
 
 Merkmale
 
-   Immutable (Unveränderlich) statt Mutable.
-   Deklarative statt Imperative (Ausführen von Anweisungen) Konfiguration.
-   Selbstheilende Systeme - Neustart bei Absturz.
-   Entkoppelte APIs – LoadBalancer / Ingress (Reverse Proxy).
-   Skalieren der Services durch Änderung der Deklaration.
-   Anwendungsorientiertes statt Technik (z.B. Route 53 bis AWS) Denken.
-   Abstraktion der Infrastruktur statt in Rechnern Denken.
+  - Immutable (Unveränderlich) statt Mutable.
+  - Deklarative statt Imperative (Ausführen von Anweisungen) Konfiguration.
+  - Selbstheilende Systeme - Neustart bei Absturz.
+  - Entkoppelte APIs – LoadBalancer / Ingress (Reverse Proxy).
+  - Skalieren der Services durch Änderung der Deklaration.
+  - Anwendungsorientiertes statt Technik (z.B. Route 53 bis AWS) Denken.
+  - Abstraktion der Infrastruktur statt in Rechnern Denken.
 
 
 # 9 Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
