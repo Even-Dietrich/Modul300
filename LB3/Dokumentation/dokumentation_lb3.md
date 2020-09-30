@@ -240,14 +240,14 @@ Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Um
 
 ## Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
   
-### Adam: <a name="Adam"></a><br>
+## Adam: <a name="Adam"></a><br>
 In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere und komplexere Arbeit abzuliefern. Da ich aber zuvor noch nie mit Docker gearbeitet habe muss ihc mich zuerst einarbeiten in.
 
 Mein Ziel an der LB3 ist es einen Webserver mit Installation eines Open Source Forum auf der VM zu Installieren. Dank meines vorwissens von der LB2 kann ich mitlerweile so komplexe sachen verstehen jedoch muss ich mich aber noch mit Docker einarbeiten, es ist nämlich recht Kompliziert 
   
-### Alex: <a name="Alex"></a><br>
+## Alex: <a name="Alex"></a><br>
 
-Stand 16.09.2020:
+### Stand 16.09.2020:
 
 Ich hoffe, dass ich mit der Erfahrung von der LB2 in der LB3 ein komplexeres System aufsetzten kann. Aber ich habe noch nie mit Docker gearbeitet also ist heute das Ziel sich ein bisschen einzuarbeiten.
 
@@ -261,18 +261,19 @@ Ich hoffe, dass ich mit der Erfahrung von der LB2 in der LB3 ein komplexeres Sys
 Rechenleistung, Hauptspeicher und Speicherplatz. Und es dreht sich hier um Megabytes bei Containern im Vergleich zu Gigabytes bei VMs. Daher passen auf einen Server sehr viel mehr Container als virtuelle Maschinen. Zudem sind Container schneller einsatzbereit: Während VMs manchmal mehrere Minuten zum Start benötigen, stehen Anwendungen hier beinahe sofort zur Verfügung.
 >Quelle: <a href=https://www.cloud-mag.com/was-sind-container/#close>cloud-mag.com</a>
   
-### Even: <a name="Even"></a><br>
-Stand 16.09.2020:
+## Even: <a name="Even"></a><br>
+
+### Stand 16.09.2020:
 
 In der LB3 werde ich versuchen mit meinem Vorwissen von der LB2 einen bessere und komplexere Arbeit abzuliefern. Da ich aber zuvor noch nie mit Docker gearbeitet habe muss ihc mich zuerst einarbeiten in. 
   
-### Jason: <a name="Jason"></a><br>
+## Jason: <a name="Jason"></a><br>
 
-Vorwissen:
+### Vorwissen:
 
 Ich habe bezogen auf Docker oder Kubernetes überhaupt kein Vorwissen und muss mir alles von Anfang an aneignen und nachlesen. Dies sollte aber kein Problem sein.
 
-Stand 16.09.2020:
+### Stand 16.09.2020:
 
 Ich erhoffe mir das ich mit der Erfahrung von LB2 in der LB3 eine bessere und komplexere Arbeit abliefern kann. Ich habe jedoch noch nie mit Docker gearbeitet daher muss ich mich zuerst etwas einarbeiten.
 
@@ -292,9 +293,11 @@ Wichtiges für ein Dockerfile:
   EXPOSE 80
 ```
 
+### Stand 30.09.2020:
 
+Heute habe ich mehr über Docker gelernt. Ich habe mit meinen Teamkollegen die Dockerfiles erstellt und die Umgebung weiter voran gebracht. Ebenfalls habe ich die Doku weitergeschrieben und das gemachte dokumentiert und beschrieben und mein gelerntes festgehalten. 
 
-Stand 30.09.2020:
+### Reflexion:
 
-Heute habe ich mehr über Docker gelernt. Ich habe mit meinen Teamkollegen die Dockerfiles erstellt und die Umgebung weiter.
+Die Arbeit in dieser LB haben wir im Team von anfang an sehr gut geplant und aufgeteilt. Wir haben die Dokumentation sehr früh und übersichtlich gestaltet und darin unsere Arbeitsaufteilung festgehalten. 
 
