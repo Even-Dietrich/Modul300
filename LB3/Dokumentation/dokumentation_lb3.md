@@ -14,32 +14,33 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 3 [Unsere Arbeitsaufteilung](#Arbeitsaufteilung)<br>
 4 [Verwendete Software](#Software)<br>
 5 [Unsere Lösung](#Lösung)<br>
-6 [Netzwerkplan](#Netzwerkplan)<br>
-7 [Sicherheit](#Sicherheit)<br>
-8 [Skript](#Skript)<br>
-9 [Wichtige Dockerbefehle](#Befehle)<br>
-10 [Testprotokolle](#Testprotokolle)<br>
-&nbsp;10.1 [Minecraftserver Testprotokoll](#MC-Test)<br>
-&nbsp;10.2 [Teamspeakserver Testprotokoll](#TS-Test)<br>
-&nbsp;10.3 [Proxyserver Testprotokoll](#Proxy-Test)<br>
-&nbsp;10.4 [Webserver Testprotokoll](#Web-Test)<br>
-&nbsp;10.5 [Fileserver Testprotokoll](#File-Test)<br>
-11 [Persönlicher Wissensstand und Reflexion](#Wissensstand)<br>
-&nbsp;11.1 [Adam](#Adam)<br>
-&nbsp;11.2 [Alex](#Alex)<br>
-&nbsp;11.3 [Even](#Even)<br>
-&nbsp;11.4 [Jason](#Jason)<br>
+&nbsp;5.1 [Netzwerkplan](#Netzwerkplan)<br>
+&nbsp;5.2 [Installation Minecraft Server](#MC-Server)<br>
+&nbsp;5.3 [Installation Teamspeak Server](#TS-Server)<br>
+6 [Sicherheit](#Sicherheit)<br>
+7 [Wichtige Dockerbefehle](#Befehle)<br>
+8 [Testprotokolle](#Testprotokolle)<br>
+&nbsp;9.1 [Minecraftserver Testprotokoll](#MC-Test)<br>
+&nbsp;9.2 [Teamspeakserver Testprotokoll](#TS-Test)<br>
+&nbsp;9.3 [Proxyserver Testprotokoll](#Proxy-Test)<br>
+&nbsp;9.4 [Webserver Testprotokoll](#Web-Test)<br>
+&nbsp;9.5 [Fileserver Testprotokoll](#File-Test)<br>
+10 [Persönlicher Wissensstand und Reflexion](#Wissensstand)<br>
+&nbsp;10.1 [Adam](#Adam)<br>
+&nbsp;10.2 [Alex](#Alex)<br>
+&nbsp;10.3 [Even](#Even)<br>
+&nbsp;10.4 [Jason](#Jason)<br>
 
-## Allgemeine Bewetungskriterien <a name="Allgemein"></a>
+## 1 Allgemeine Bewetungskriterien <a name="Allgemein"></a>
 
-### K1: Umbebung auf eigenem Notebook eingerichtet und funktionsfähig <a name="K1"></a>
+### 1.1 K1: Umbebung auf eigenem Notebook eingerichtet und funktionsfähig <a name="K1"></a>
 - VirtualBox ist installiert und funktionstüchtig
 - Vagrant ist installiert und funktionstüchtig
 - Visualstudio-Code ist installiert und wird verwendet
 - Git-Client ist installiert
 - SSH-Key für Client erstellt und im GitHub Account hinterlegt
 
-### K2: Eigene Lernumgebung ist eingerichtet <a name="K2"></a>
+### 1.2 K2: Eigene Lernumgebung ist eingerichtet <a name="K2"></a>
 - GitHub oder Gitlab-Account ist erstellt
 - Git-Client wurde verwendet
 - Dokumentation ist als Mark Down vorhanden
@@ -47,24 +48,24 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 - Markdown ist strukturiert
 - Persönlicher Wissenstand im Bezug auf die wichtigsten Themen ist dokumentiert (Containerisierung / Docker, Microservices), siehe [Persönlicher Wissensstand](#Wissensstand)
 
-### K3: <a name="K3"></a>
+### 1.3 K3: <a name="K3"></a>
 - Bestehende Docker-Container sind kombiniert
 - Bestehnde Container als Backend, Desktop-App als Frontend sind eingesetzt
 - Volumes zur persistenten Datenablage ist eingerichtet
 - Eingerichte Umgebungen ist dokumentiert
 - Funktionsweise ist getestet und Testfälle sind dokumentiert
 
-### K4: <a name="K4"></a>
+### 1.4 K4: <a name="K4"></a>
 -
 
-### K5: <a name="K5"></a>
+### 1.5 K5: <a name="K5"></a>
 -
 
-### K6: <a name="K6"></a>
+### 1.6 K6: <a name="K6"></a>
 -
 
 
-## Unsere Idee: <a name="Idee"></a>
+## 2 Unsere Idee: <a name="Idee"></a>
 
 Wir wollen folgende Server aufsetzten und konfigurieren:
 
@@ -74,7 +75,7 @@ Wir wollen folgende Server aufsetzten und konfigurieren:
   - Apache Webserver mit einem Communityforum
   - Fileserver als Backup für die Daten des Minecraftserver
 
-## Arbeitsaufteilung: <a name="Arbeitsaufteilung"></a>
+## 3 Arbeitsaufteilung: <a name="Arbeitsaufteilung"></a>
 
 Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir an folgenden Servers:
 
@@ -84,7 +85,7 @@ Wir arbeiten alle gemeinsamm an der Dokumentation und individuell arbeiten wir a
   - Adam, Apache/Webserver mit Installation eines Open Source Forum
   - Fileserver je nach auslastung
 
-## Software: <a name="Software"></a>
+## 4 Software: <a name="Software"></a>
 
 Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 
@@ -92,9 +93,16 @@ Um unsere Lösung testen zu können brauchen wir zusätzliche Software:
 - <a href="https://www.minecraft.net/de-de/download">Minecraft Client, </a>damit wir auf den Server spielen können
 - Browser
 
-## Unsere Lösung: <a name="Lösung"></a>
+## 5 Unsere Lösung: <a name="Lösung"></a>
 
-### Installation vom Minecraft-Server <a name="MC-Server"></a>
+### 5.1 Netzwerkplan: <a name="Netzwerkplan"></a>
+
+Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
+
+![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/Netzwerkplan.png)
+
+
+### 5.2 Installation vom Minecraft-Server <a name="MC-Server"></a>
 
 Den Minecraft Server ist einfach zum installieren man braucht nur den folgenden Befehl eingeben:
 ```
@@ -144,13 +152,6 @@ Um den Teamspeak 3 Server im Hintergrund laufen lassen damit man auf der VM mehr
 docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -e TS3SERVER_LICENSE=accept teamspeak 
 ```
 
-
-## Netzwerkplan: <a name="Netzwerkplan"></a>
-
-Der Netzwerkplan muss noch mit den Servernamen ergänzt werden!
-
-![Netzwerkplan](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/Netzwerkplan.png)
-
 ## Sicherheit: <a name="Sicherheit"></a>
 
 Mit den Shell Scripts welche im Vagrantfile hinterlegt sind werden Firewall Regeln erstellt und die Firewall aktiviert.
@@ -161,8 +162,6 @@ Folgende Firewall Regeln sind konfiguriert:
     sudo ufw allow 80/tcp
     sudo ufw -f enable
 ```
-
-## Skript: <a name="Skript"></a>
 
 ## Wichtige Dockerbefehle: <a name="Befehle"></a><br>
 
