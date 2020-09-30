@@ -252,7 +252,69 @@ Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Um
 ### Testprotokoll für den Webserver: <a name="Web-Test"></a><br>
 -
 ### Testprotokoll für den Fileserver: <a name="File-Test"></a><br>
--
+
+#### Fall 1
+-Ist zustand:
+- Der File Server wurde installiert und läuft auf der VM
+- Client hat Zugriff auf das Filesystem 
+- Folder Test wurde auf dem Server erstellt 
+- Browser ist auf dem TestClient installiert 
+- User Account Testuser auf owncloud registiert 
+
+Soll zustand:
+- User hat Zugriff auf den Ordner Test 
+- Ordner kann geöffnet werden 
+- noch keine Dateien werden angezeigt 
+
+Tatsächliches Ergebnis:
+- User hat Zugriff auf den Ordner Test 
+- Ordner kann geöffnet werden 
+- noch keine Dateien werden angezeigt 
+
+Analyse:
+
+Der Bentuzer hat Zugriff auf den Fileserver und sieht die Ordner 
+
+#### Fall 2
+Ist zustand:
+- Der File Server wurde installiert und läuft auf der VM
+- Client hat Zugriff auf das Filesystem 
+- Folder Test wurde auf dem Server erstellt 
+- Browser ist auf dem TestClient installiert 
+- User Account Testuser auf owncloud registiert 
+- User erstellt txt datei mit dem Name test 
+
+Soll zustand:
+- User kann die Datei test.txt erstellen
+- Datei txt ist im System sichtbar
+- User kann Datei öffnen und wort test reinschreiben und abspeichern 
+
+Tatsächliches Ergebnis:
+- Datei test.txt kann erstellt werden 
+- Datei kann geöffnet und bearbeitet werden
+
+Analyse:
+
+Das erstellen und bearbeitet von Dateien funktioniert auf dem Fileserver 
+
+Ist zustand:
+- Der File Server wurde installiert und läuft auf der VM
+- Client hat Zugriff auf das Filesystem 
+- Folder Test wurde auf dem Server erstellt 
+- Browser ist auf dem TestClient installiert 
+- User Account Testuser auf owncloud registiert 
+- Datei text.txt wird gelöscht 
+
+Soll zustand:
+- Datei test.txt kann per delete gelöscht werden 
+- Datei ist danach nicht mehr vorhanden 
+
+Tatsächliches Ergebnis:
+- Datei kann gelöscht werden
+
+Analyse:
+
+Das löschen einer Datei funktioniert und kann per Befehl umgesetz werden $
 
 # Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
   
