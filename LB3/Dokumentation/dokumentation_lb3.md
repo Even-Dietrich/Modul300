@@ -48,7 +48,7 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 - Markdown ist strukturiert
 - Persönlicher Wissenstand im Bezug auf die wichtigsten Themen ist dokumentiert (Containerisierung / Docker, Microservices), siehe [Persönlicher Wissensstand](#Wissensstand)
 
-### 1.3 K3: <a name="K3"></a>
+### 1.3 K3: Docker <a name="K3"></a>
 - Bestehende Docker-Container sind kombiniert
 - Bestehnde Container als Backend, Desktop-App als Frontend sind eingesetzt
 - Volumes zur persistenten Datenablage ist eingerichtet
@@ -56,10 +56,17 @@ Unsere Dokumentation zur Leistungsbeurteilung 3
 - Funktionsweise ist getestet und Testfälle sind dokumentiert
 
 ### 1.4 K4: <a name="K4"></a>
--
+- Wird nicht bewertet.
 
-### 1.5 K5: <a name="K5"></a>
--
+### 1.5 K5: Allgemein <a name="K5"></a>
+- Allgemein- 
+  - Kreativität
+  - Komplexität- 
+- UmfangUmsetzung eigener Ideen- 
+  - Übungsdokumentation als Vorlage für Modul-Unterlagen erstellt
+- Persönlicher Lernentwicklung- 
+  - Vergleich Vorwissen, Wissenszuwachs
+  -  Reflexion
 
 ### 1.6 K6: <a name="K6"></a>
 -
