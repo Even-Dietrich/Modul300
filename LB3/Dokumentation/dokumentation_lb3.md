@@ -212,6 +212,7 @@ Wenn die Installation fertig ist kann man auf die Testseite zugreifen:
 In diesem Abschnitt sind alle Testprotokolle festgehalten.
 
 ### Testprotokoll für den Minecraftserver: <a name="MC-Test"></a><br>
+
 Ist zustand:<br>
              - Der Minecraft Server wurde installiert und ist gestartet<br>
              - Die IP-Adresse des Servers ist bekannt<br>
@@ -227,6 +228,7 @@ Tatsächliches Ergebnis:<br>
 Analyse:<br>
              
 ### Testprotokoll für den Teamspeakserver: <a name="TS-Test"></a><br>
+
 Ist zustand:<br> 
              - Der Teamspeak Server wurde installiert und läuft auf der VM<br>
              - Die IP-Adresse des Servers ist bekannt<br>
@@ -250,12 +252,32 @@ Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Um
 
 
 ### Testprotokoll für den Proxyserver: <a name="Proxy-Test"></a><br>
+
 - Der Proxyserver wurde nicht umgesetzt.
 
 
 
 ### Testprotokoll für den Webserver: <a name="Web-Test"></a><br>
--
+
+Ist-Zustand:
+- Webserver ist installiert und läuft auf der VM
+- Client hat Zugriff auf die Webseite
+- Browser ist installiert
+
+Soll-Zustand:
+- User hat Zugriff auf die Webseite
+- Webseite kann geöffnet und bedient werden
+  
+Tatsächliches Ergebnis:
+- User hat Zugriff
+- Webseite kann bedient werden.
+
+Analyse:
+
+Der Webserver und die Webseite funktioniert einfwandfrei.
+
+
+
 ### Testprotokoll für den Fileserver: <a name="File-Test"></a><br>
 
 #### Fall 1
