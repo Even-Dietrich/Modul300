@@ -189,12 +189,11 @@ Wenn man mit dem Setup fertig ist sollte man Owncloud öffnen können und sich a
 |   `docker stop $(docker ps -a -q)`     |       Alle laufenden Container stoppen     |
 |   `docker rm $(docker ps -a -q)`      |        Alle laufenden Container löschen   |
 |   `docker start [OPTIONS] CONTAINER [CONTAINER...]`  |   Bestimmter Container starten   |
-|        |            |
-|        |            |
-|        |            |
-|        |            |
-|        |            |
-|        |            |
+|   `docker ps (-a -q)`  |         Aktive Container anzeigen  (Attribute=Anzeigen der aktiven Container) |
+|   `docker start [id]`     |       Container starten      |
+|   `docker kill`    |     Stoppt den Container sofort       |
+|   `docker log`     |      Zeigt die Logs der einzelnen Container an      |
+|   `docker run --rm -d -p xxxx:xxxx Container`     |      Bestimmter Container an bestimmten Port weiterleiten      |
 
 ## Testprotokolle: <a name="Testprotokolle"></a><br>
 
