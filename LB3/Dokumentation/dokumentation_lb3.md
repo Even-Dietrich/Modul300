@@ -172,7 +172,11 @@ docker run -d -p 80:80 owncloud:8.1
 
 Wenn dies gemacht ist muss man noch folgende Konfiguration machen und die Installation abschliessen:
 
-![MC-inGame](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/MC-inGame.png)
+![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/owncloud.jpeg)
+
+via localhost:80 zugreifen setup fertig stellen login: mc-server pw: 1234
+
+![owncloud](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/owncloud2.jpeg)
 
 
 
