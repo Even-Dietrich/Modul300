@@ -238,7 +238,10 @@ Der Teamspeak-Server ist voll funktionstüchtig und kann in einer Produktiven Um
 
 
 ### Testprotokoll für den Proxyserver: <a name="Proxy-Test"></a><br>
--
+- Der Proxyserver wurde nicht umgesetzt.
+
+
+
 ### Testprotokoll für den Webserver: <a name="Web-Test"></a><br>
 -
 ### Testprotokoll für den Fileserver: <a name="File-Test"></a><br>
