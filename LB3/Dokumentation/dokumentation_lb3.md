@@ -376,7 +376,7 @@ Kubernets
 
 Kubernetes ist ein Open-Source-System zur Automatisierung der Bereitstellung, Skalierung und Verwaltung von Container-Anwendungen. Es zielt darauf eine Plattform zur verfügung zu stellen um mehrer Container auf verschieden Hotst zu verteieln. Dabei unstersützt es viele Container-Tools wie Docker. 
 
-![Kubernaters] https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/kubernetic.JPG
+>![Kubernaters] https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/kubernetic.JPG
 
 
 Merkmale
@@ -439,6 +439,12 @@ Ich lernte heute verschiede Befehle kennen:
 |docker container ps                 | Zeigt alle Container an |
 
 Dazu lernte ich noch den Container Nginx kennen. Mit diesem Container wollten wir den Reverse Proxy realisieren. Dazu versuchte ich mit mehreren Anleitung durchzuführen was ich aber am Ende nicht machte. Da wir in der LB3 die Punkte von K4 nicht umsetzt müssen wurde der Reverse Proxy nicht umgesetzt. Trotzdem hätte ich mit mehr Zeit diesen mit dem Angesammelten Wissen realisieren.
+
+### Reflexion:
+
+Durch eine gute Plannung und das verwenden von Github kammen wir schnell mit der LB3 vorwärts. Wir konnten uns gegeseitig helfen und somit unser angesammelt Wissen auch einsetzten. 
+Das Wissen von LB2 konnte ich sehr gut anwenden und es half mir in einigen Situationen weiter. 
+
   
 ##  9.4 Jason: <a name="Jason"></a><br>
 
