@@ -343,6 +343,8 @@ Analyse:
 Das löschen einer Datei funktioniert und kann per Befehl umgesetz werden
 
 # 8 Kubernaters: <a name="Kubes"></a><br>
+https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/kubernetic.JPG
+
 
 # 9 Persönlicher Wissensstand und Reflexion: <a name="Wissensstand"></a><br>
   
