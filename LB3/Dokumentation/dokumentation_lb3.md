@@ -376,7 +376,7 @@ Kubernets
 
 Kubernetes ist ein Open-Source-System zur Automatisierung der Bereitstellung, Skalierung und Verwaltung von Container-Anwendungen. Es zielt darauf eine Plattform zur verfügung zu stellen um mehrer Container auf verschieden Hotst zu verteieln. Dabei unstersützt es viele Container-Tools wie Docker. 
 
->![Kubernaters] https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/kubernetic.JPG
+>![Kubernaters](https://github.com/Even-Dietrich/Modul300/blob/master/LB3/img/kubernetic.JPG)
 
 
 Merkmale
